@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; 
+}
+
+body{
+  font-size: 16px;
+  color: #121314;
+  text-align: center;
+}
+
+nav ul li{
+  padding: 0.5em;
+  background-color: #121314;
+}
+nav, footer, main{
+  font-family: 'Quantico', sans-serif;
+
+}
+
+h1{
+    font-family: 'Yatra One', cursive;
+}
+h1, footer, main, nav{
+  margin: 1em;
+}
+nav ul li a{
+  color: beige;
+}
+@font-face
+{
+  font-family: "Socialico";
+  src: url('fuentes/Socialico.ttf') format("truetype");
+}
+#redesSociales{
+  font-family: "Socialico";
+  text-align: center;
+  font-size: 3.5em;
+}
