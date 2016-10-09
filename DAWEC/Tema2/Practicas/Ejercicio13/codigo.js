@@ -7,7 +7,7 @@
 	var articuloNuevo = document.createElement("li");
 
 	var textoElementoNuevo = document.createTextNode(
-		("Introduce el contenido del nuevo elemento de la lista:"));
+		(prompt("Introduce el contenido del nuevo elemento de la lista:")));
 
 	articuloNuevo.appendChild(textoElementoNuevo);
 
