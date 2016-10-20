@@ -1,38 +1,45 @@
 /**
  * Realizado por Antonio Luque Bravo
  */
+
 function informacion(elEvento) {
 	var evento = elEvento || window.event; 
 
-	var x = evento.clientX;
-	var y = evento.clientY;
+	// Coordenadas X e Y del evento (ratón en este caso)
+	var coordenadaX = evento.clientX;
+	var coordenadaY = evento.clientY;
 
+	// Dimensiones de la ventana del navegador
 	var dimensiones = tamanoVentanaNavegador();
-	var dimensionX = dimensiones[0];
-	var dimensionY = dimensiones[1];
+	var tamanoX = dimensiones[0];
+	var tamanoY = dimensiones[1];
 
+	// Posiciones Horizontal y Vertical (las que se indicarán)
 	var posicionHorizontal = "";
 	var posicionVertical = "";
 
-	if(x > tamanoX/2) { 
-		posicionHorizontal = "derecha";
+	// Si la coordenada X del ratón es mayor que la mitad de la dimensión X de la ventana (horizontal)
+	if(coordenadaX > tamanoX/2) { 
+		posicionHorizontal = "derecha"; // Está a la derecha
 	}
 	
 	else {
-		posicionHorizontal = "izquierda";
+		posicionHorizontal = "izquierda"; // Sino, está a la izquierda
 	}
 
-	if(y > tamanoY/2) {
-		posicionVertical = "abajo";
+	// Si la coordenada Y del ratón es mayor que la mitad de la dimensión Y de la ventana (vertical)
+	if(coordenadaY > tamanoY/2) {
+		posicionVertical = "abajo"; //Está abajo
 	}
 	
 	else {
-		posicionVertical = "arriba";
+		posicionVertical = "arriba"; // Sino, está arriba
 	}
 
 	muestraInformacion(['Posicion', posicionHorizontal, posicionVertical]);
 }
 
+// Muestra el texto informativo
 function muestraInformacion(mensaje) {
 	document.getElementById("info").innerHTML = '<h1>'+mensaje[0]+'</h1>';
 	
@@ -41,12 +48,23 @@ function muestraInformacion(mensaje) {
 	}
 }
 
+// Haya la dimensión de la ventana del navegador
 function tamanoVentanaNavegador(){ 
 	var dimensiones = [];
 	
-	if(typeof(window.innerWidth) == 'number')
+	if(typeof(window.innerWidth) == 'number') {
+		// No es IE
 		dimensiones = [window.innerWidth, window.innerHeight];
+	} else if(document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+		//IE 6 en modo estandar (no quirks)
+		dimensiones = [document.documentElement.clientWidth, document.documentElement.clientHeight];
+	} else if(document.body && (document.body.clientWidth || document.body.clientHeight)) {
+		//IE en modo quirks
+		dimensiones = [document.body.clientWidth, document.body.clientHeight];
+	}
+	
 	return dimensiones;
 }
 
+// Tal cual
 document.onclick = informacion;		

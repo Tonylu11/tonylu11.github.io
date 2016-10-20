@@ -20,4 +20,4 @@ alert("Hay " + contador + " enlaces que enlazan a http://prueba/");
 var parrafos = document.getElementsByTagName('p');
 var enlace = parrafos[2].getElementsByTagName('a');
 
-alert("Hay " + enlace.length + " enlaces en el tercer párrafo.")
+alert("Hay " + enlace.length + " enlaces en el tercer párrafo.");
