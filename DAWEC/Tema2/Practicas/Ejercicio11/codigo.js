@@ -1,23 +1,24 @@
 /**
  * Realizado por Antonio Luque Bravo
  */
+{
+	let enlaces = document.getElementsByTagName('a');
+	let penultimoEnlace = enlaces[enlaces.length-2].href;
 
-var enlaces = document.getElementsByTagName('a');
-var penultimoEnlace = enlaces[enlaces.length-2].href;
+	alert("Hay " + enlaces.length + " enlaces en la página.")
+	alert("La dirección a la que enlaza el penúltimo enlace es: " + penultimoEnlace);
 
-alert("Hay " + enlaces.length + " enlaces en la página.")
-alert("La dirección a la que enlaza el penúltimo enlace es: " + penultimoEnlace);
-
-var contador = 0;
-for (var i = 0; i < enlaces.length; i++) {
-	if (enlaces[i].href == 'http://prueba/') {
-		contador++;
+	let contador = 0;
+	for (let i = 0; i < enlaces.length; i++) {
+		if (enlaces[i].href == 'http://prueba/') {
+			contador++;
+		}
 	}
+
+	alert("Hay " + contador + " enlaces que enlazan a http://prueba/");
+
+	let parrafos = document.getElementsByTagName('p');
+	let enlace = parrafos[2].getElementsByTagName('a');
+
+	alert("Hay " + enlace.length + " enlaces en el tercer párrafo.");
 }
-
-alert("Hay " + contador + " enlaces que enlazan a http://prueba/");
-
-var parrafos = document.getElementsByTagName('p');
-var enlace = parrafos[2].getElementsByTagName('a');
-
-alert("Hay " + enlace.length + " enlaces en el tercer párrafo.");

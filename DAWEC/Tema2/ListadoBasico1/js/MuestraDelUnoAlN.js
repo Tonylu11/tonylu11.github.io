@@ -10,7 +10,7 @@
 		"Dame un número e indicaré la secuencia desde 1 hasta el número introducido."));
 		if (!isNaN(numero)){
 			if (numero > 0){
-				for (var i = 1; i <= numero; i++)
+				for (let i = 1; i <= numero; i++)
 					mensaje += " " + i;
 				console.log("Secuencia desde 1 hasta " + numero + ":"+ mensaje);
 			}else 

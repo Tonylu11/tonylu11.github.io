@@ -7,7 +7,7 @@
 */
 {
 	let numero = prompt("Introduce un número y lo convertire en letra");
-	if(numero <0 || numero>99 || numero.length==0){
+	if(numero <0 || numero>99 || numero.length==0 || isNaN(numero)){
 		console.log("Número en blanco o invalido");
 	}else{
 		console.log(decenasNumeroALetra(numero));

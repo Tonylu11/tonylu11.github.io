@@ -17,7 +17,7 @@
 	let limite = prompt("Introduce un número que será el límite hasta donde encontraré los primos.");
 	let mensaje = "Los números primos hasta " + limite + " son:";
 	if (!isNaN(limite)) {
-		for (var i = 2; i < limite; i++) {
+		for (let i = 2; i < limite; i++) {
 			if (calcularSiPrimo(i)) {
 				mensaje+=" " + i;
 			};
