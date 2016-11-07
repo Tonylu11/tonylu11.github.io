@@ -4,17 +4,42 @@
   list-style: none;
   text-decoration: none; 
 }
-
 body{
   font-size: 16px;
   color: #121314;
+  *text-align: center;
+}
+footer{
   text-align: center;
 }
-
+header{
+  text-align: center;
+}
+ol{
+  display: inline;
+  text-align: center;
+}
+p{
+  text-align: center;
+}
+nav{
+  background-color: #121314;
+  text-align: center;
+}
 nav ul li{
   padding: 0.5em;
-  background-color: #121314;
+  display: inline-block;
+  transition: 1s all;
 }
+
+nav ul li:hover{
+  background-color: white; 
+}
+
+nav ul li:hover a{
+  color: black;
+}
+
 nav, footer, main{
   font-family: 'Quantico', sans-serif;
 
@@ -38,4 +63,18 @@ nav ul li a{
   font-family: "Socialico";
   text-align: center;
   font-size: 3.5em;
+}
+table{
+  margin: 0 auto;
+}
+#tema2{
+  text-align: center;
+  display: inline-block;
+  width: 49%;
+}
+#tema3{
+  vertical-align: top;
+  text-align: center;
+  display: inline-block;
+  width: 49%;
 }
