@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Antonio Luque Bravo</title>
+	<script type="text/javascript" src="js/Gato.js"></script>
+	<link rel="stylesheet" href="css/gatoHijo.css">
+	<link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+	<h1>Lindo gatito</h1>
+	<div>Crea una clase Gato, y a partir de ella crea tantos gatos como quiera el usuario.</div>
+	<div>Cada gato tendrá un nombre, una fecha de nacimiento, una raza y un peso (1-15). Cada vez que crees un objeto gato aparecerá una ventana nueva con una imagen que cambiará en función de su estado (comiendo, durmiendo y jugando, que es su estado habitual). El usuario podrá averiguar la edad del gato partiendo de un evento.</div>
+	<div>
+		<ul>
+			<li>Evita las cajas de texto</li>
+			<li>No puedes usar ni alert ni prompt</li>
+			<li>Hazlo lo más dinámico posible.</li>
+			<li>Utiliza prototype para los métodos</li>
+		</ul>
+	</div>
+	<div id="cajaGatito">
+		<h2>New Gato</h2>
+		<form>
+			<label>Nombre: </label><input type="text" id="nombreGato"/>
+			<label>Fecha de nacimiento: </label><input type="text" id="fechaNacimiento"/>
+			<label>Peso: </label><input type="text" id="pesoGato"/>
+			<label>Raza: </label><select id="razaGato">
+				<option value="Egipcio">Egipcio</option>
+				<option value="Siamés">Siamés</option>
+				<option value="Persa">Persa</option>
+			</select>
+			<input type="button" value="New gato" id="crearGato" />
+		</form>
+	</div>
+</body>
+</html>

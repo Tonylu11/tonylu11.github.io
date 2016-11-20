@@ -4,77 +4,166 @@
   list-style: none;
   text-decoration: none; 
 }
+
 body{
   font-size: 16px;
   color: #121314;
-  *text-align: center;
 }
+
 footer{
   text-align: center;
 }
-header{
+
+h1{
+  font-family: 'Yatra One', cursive;
+  text-align: center;
+  color: #4286f4;
+  text-shadow: 2px 1px 3px grey;
+}
+
+h1, footer, main, nav{
+  margin: 1em;
+}
+
+main{
   text-align: center;
 }
-ol{
-  display: inline;
-  text-align: center;
-}
-p{
-  text-align: center;
-}
+
 nav{
   background-color: #121314;
   text-align: center;
+  border-radius: 3px;
 }
+
 nav ul li{
-  padding: 0.5em;
   display: inline-block;
-  transition: 1s all;
+  padding: 1em;
+  transition: 0.5s all;
 }
 
 nav ul li:hover{
   background-color: white; 
 }
 
+nav ul li a{
+  color: beige;
+}
+
 nav ul li:hover a{
-  color: black;
+  color: #4286f4;
 }
 
 nav, footer, main{
   font-family: 'Quantico', sans-serif;
-
 }
 
-h1{
-    font-family: 'Yatra One', cursive;
+ol{
+   margin-left: 2em;
 }
-h1, footer, main, nav{
-  margin: 1em;
+
+ol ol{
+  margin-left: 2em;
+  min-width: 100%;
 }
-nav ul li a{
-  color: beige;
+
+#container{
+  margin: 2em;
 }
-@font-face
-{
-  font-family: "Socialico";
-  src: url('fuentes/Socialico.ttf') format("truetype");
+#container>table{
+  margin: 0 auto;
 }
+
+#imagenestacion{
+  width: 100%;
+}
+#paleta>table{
+ margin: 0 auto;
+}
+
+#proyectos,#tema1,#tema2,#tema3,#tema4{
+  vertical-align: top;
+  padding:1em;
+  text-align: left;
+}
+
+#proyectos *,#tema1 *,#tema2 *,#tema3 *,#tema4 *{
+  display: inline-block;
+}
+
 #redesSociales{
   font-family: "Socialico";
   text-align: center;
   font-size: 3.5em;
 }
-table{
-  margin: 0 auto;
+#redesSociales>a{
+  color:#4286f4; 
 }
-#tema2{
-  text-align: center;
+
+#separador,#separador2{
+  margin: 1em;
+  height: 10px;
+  border-radius: 1.5px;
+}
+
+#separador{
+  background-color: #4286f4;
+  margin-bottom: 0em;
+  background: linear-gradient(to bottom,#4286f4 40%, black 80%);
+}
+
+#separador2{
+  *background-color: black;
+  *margin-top: 0;
+}
+
+#subtitulo{
+  font-size: 1.1em;
+}
+
+#tablamultiplicar{
   display: inline-block;
-  width: 49%;
+  min-width: 10px;
+  padding: 1em;
+  margin: 10px;
+  border: 3px solid salmon;
 }
-#tema3{
-  vertical-align: top;
-  text-align: center;
-  display: inline-block;
-  width: 49%;
+
+#tema1 a,#tema2 a,#tema3 a,#tema4 a,#proyectos a{
+  padding: 5px;
+  margin: 5px;
+  background-color: #4286f4;
+  color: white;
+  border-radius: 3px;
+  transition: 0.5s all;
 }
+
+#tema1 a:hover,#tema2 a:hover,#tema3 a:hover,#tema4 a:hover,#proyectos a:hover{
+  color:black;
+  background-color: lightblue;
+}
+
+#tema1 label, #tema2 label, #tema3 label,#tema4 label, #proyectos label{
+  display: block;
+}
+
+#titulo{
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+main>div>div{
+  border-bottom:2px solid black;
+}
+
+@font-face
+{
+  font-family: "Socialico";
+  src: url('fuentes/Socialico.ttf') format("truetype");
+}
+
+
+
+
+
+
+
