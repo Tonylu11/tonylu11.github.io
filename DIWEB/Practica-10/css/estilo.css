@@ -1,0 +1,195 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+article{
+  margin: 10px;
+  margin-bottom: 17px;
+  padding: 20px;
+  transition: 0.7s all;
+  border-radius: 3px 3px;
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+
+}
+article div{
+  display: inline-block;
+  width:60%;
+  vertical-align: middle;
+  padding: 1em;
+}
+article div header{
+  vertical-align: top;
+  font-family: "Quadrata";
+  color: #EF9200;
+  font-size: 1.3em;
+  padding-bottom: 20px;
+}
+article div p{
+  margin: 0;
+}
+article:hover{
+  box-shadow: 3px 3px 20px;
+  transform: scale(1.03,1.03);
+}
+
+body{
+  background-image: url('../imagenes/transparenciaNegro.png'),url('../imagenes/fondo2.jpg');
+  background-attachment: fixed;
+}
+body>header{
+  text-align: center;
+  font-family: "Quadrata";
+  padding: 1.2em;
+  font-size: 3.2em;
+  font-weight: bold;
+  color: #FF9C00;
+  text-shadow: 2px 2px 5px #FF9C00;
+}
+nav{
+  text-align: center;
+  background: rgba(5,5,5,0.7);
+}
+
+nav, footer, aside, article{
+   border: 5px outset #FF9C00;
+}
+
+nav>ul{
+  list-style: none; 
+}
+nav>ul>li{
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  transition: 1s all;
+  vertical-align: top;
+}
+nav>ul>li:hover{
+  background-color: #EF9200;
+}
+nav>ul>li>a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+aside{
+  padding: 10px;
+  display: inline-block;
+  width:25%;
+  vertical-align: top;
+  background-color: rgba(0,0,0,0.7);
+  margin: 1%;
+  border-radius: 3px 3px;
+  color: white;
+  animation: latido 8s infinite;
+}
+
+@keyframes latido {
+	0%{
+		background: black;
+	}
+  25%{
+    background: #FF9C00;
+  }
+	50%{
+		background: #B36E00;
+	}
+  75%{
+    background: #FF9C00;
+  }
+	100%{
+		background: black;
+	}
+}
+
+#noticia1,#noticia2,#noticia3,#noticia4,#noticia5{
+  width: 30%;
+  display: inline-block;
+  vertical-align: middle;
+}
+main{
+  width: 69%;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 0;
+}
+
+footer{
+  text-align: center;
+  background: linear-gradient(to right, #FF9C00 -10% , black 50%, #FF9C00 110%);
+  padding: 20px;
+  color: white;
+}
+#sobremi{
+  display: inline-block;
+}
+#iconoContacto,#iconoInicio{
+  vertical-align: middle;
+}
+#imagen img{
+  width: 8em;
+  padding: 0;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+#imagen{
+  padding-top: 3%;
+  text-align: center;
+}
+#descripcionsobremi{
+  margin: 2em;
+}
+p{
+  margin: 1em;
+}
+section{
+  padding: 10px;
+}
+#redessociales>a>img{
+  margin: 15px;
+  width: 4%;
+}
+@font-face
+{
+  font-family: "Quadrata";
+  src: url('../fuentes/quadrata.ttf') format("truetype");
+}
+
+
+/*FORMULARIO*/
+[required]{
+  border-color: green;
+  box-shadow: 0px 0px 5px green;
+}
+
+input:invalid{
+  border-color: red;
+  box-shadow: 0px 0px 5px red;
+  border-radius: 0px 5px;
+}
+
+input:invalid{
+  border-color:red;
+  box-shadow: 0px 0px 5px red;
+  border-radius: 0px 5px 0px 5px;
+}
+
+form{
+  margin: 0 auto;
+  width: 50%;
+  padding: 50px;
+  background-color: rgba(0,0,0,0.7);
+}
+form input, form textarea{
+  color: white;
+  background:rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  border-radius: 2px;
+  resize: none;
+}
+form p{
+  text-align: right;
+  color: #FF9C00;
+}
