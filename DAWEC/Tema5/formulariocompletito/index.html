@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario Antonio Luque Bravo</title>
+		<script defer type="text/javascript" src="js/codigo.js"></script>
+
+</head>
+<body>
+	<h1>Formulario Completito</h1>
+		<form>
+			<br/><label>Nombre:</label><input id="nombre" type="text" placeholder="Nombre y Apellidos"/><span id="nombreError"></span>
+			
+			<br/><br/><label>DNI:</label><input id="dni" type="text" placeholder="xxxxxxxx-L"/><span id="dniError"></span>
+			
+			<br/><br/><label>Fecha de nacimiento:</label><input id="fecha" type="text" placeholder="dd/mm/yyyy"/><span id="fechaError"></span>
+
+			<br/><br/>
+			<label>Sexo</label>
+				<input type="radio" value="mujer" class="sexos" name="radioB"><label>Mujer</label>
+				<input type="radio" value="hombre" class="sexos" name="radioB"><label>Hombre</label><span id="sexoError"></span><br/>
+			
+			<br /><br /><label>E-mail:</label><input id="email" type="text" placeholder="ejemplo@ejemplo.com"/><span id="emailError"></span>
+			
+			<br /><br /><label>Teléfono:</label><input id="telefono" type="text" placeholder="xxx xx xx xx ó xxxxxxxxx"/><span id="telefonoError"></span>
+			
+			<br /><br /><label>Número de cuenta:</label><input id="cuenta" type="text" placeholder="ES-xx-xxxx-xxxx-xx-xxxxxxxxxx" /><span id="cuentaError"></span>
+			
+			<br /><br /><label>URL:</label><input id="url" type="text" placeholder="http://www.google.es"/><span id="urlError"></span>
+			
+			<br /><br /><label>Ciudad: </label>
+				<select id="ciudad" name="ciudad">
+					<option value="ninguna">Elija una provincia</option>
+					<option value="cordoba">Córdoba</option>
+					<option value="malaga">Málaga</option>
+					<option value="sevilla">Sevilla</option>
+				</select><span id="ciudadError"></span>
+			<br/><br/><input type="checkbox" id="condiciones"><label>Aceptar condiciones</label><span id="condicionesError"></span>
+
+			<br /><br />
+			<input type="submit" id="enviar" value="Enviar" />
+			<input type="reset" id="reset" value="Limpiar Campos" />
+		</form>
+		
+</body>
+</html>

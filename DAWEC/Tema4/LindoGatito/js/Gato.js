@@ -1,6 +1,6 @@
 {
 	let estado = ["Jugando","Comiendo","Durmiendo","Muerto"];
-	var gato;
+	let gato;
 	let nombreGato, fechaNacimientoGato, pesoGato, razaGato, newGato;
 
 	function Gato (nombre,fechaNacimiento,raza,peso) {
@@ -75,7 +75,6 @@
 
 	Gato.prototype.comer = function () {
 		if (this.estado == estado[3]) {
-			
 			throw new Exception("Tu gato está muerto.");
 		}
 		this.estado = estado[1];
@@ -104,6 +103,9 @@
 
 	};
 	let crearGato = function (nombre, fechaNacimiento, raza, peso) {
+		if (fechaNacimiento== "Invalid Date") {
+			throw new Exception("Fecha Inválida");
+		}
 		gato = new Gato(nombreGato.value,fechaNacimientoGato.value,razaGato.value,parseInt(pesoGato.value));
 		console.log(gato);
 		let ventanaGatito = window.open("gatito.html","","height=500, width=500,top=10,left=10");
@@ -121,5 +123,6 @@
 
 	function Exception (message) {
 		this.message = message;
-	}  
+		
+	}
 }
