@@ -120,9 +120,10 @@ article #fecha{
 }
 
 footer{
+  margin-top: 2em;
   color: #15B6FE;
   background-color: #002446;
-  padding: 1em;
+  padding: 2em;
   text-align: center;
 }
 footer img{
@@ -199,6 +200,9 @@ form #enviar{
 form #enviar:hover{
   background-color: #002446;
   color: #15B6FE;
+}
+#footerForm{
+  margin-top: 0;
 }
 
 
