@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilo.css">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+	<title>Gestor de Tareas</title>
+</head>
+<body>
+	<header>Gestor de Tareas</header>
+	<nav id="navnuevatarea">
+		<ul>
+			<li><a href="index.html">Inicio</a></li><li><a href="#">Añadir Tarea</a></li>
+		</ul>
+	</nav>
+		<main>
+			<form action="#" method="post">
+				<table border=0>
+					<tr>
+						<td width=50%>
+							<p>Nombre de la tarea:</p>
+						</td>
+						<td width=50%>
+							<input type="text" required name="nombre" placeholder="ej: Galería" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Módulo:</p>
+						</td>
+						<td>
+							<input type="text" required placeholder="ej: DAWEC" name="modulo" pattern="^[A-zñáéíóúÁÉÍÓÚ]{1,5}$" title="Cadena de caracteres, máximo 5, no se permiten caracteres especiales" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Fecha de entrega:</p>
+						</td>
+						<td>
+							<input type="text" required placeholder="28 de Febrero de 2018" name="fecha"/>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p>Descripción</p>
+						</td>
+						<td>	
+							<textarea required cols=30 rows=5 name="descripcion"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td>
+							<input type="submit" value="Enviar" id="enviar">
+						</td>
+					</tr>
+				</table>
+			</form>
+		</main>
+		<footer>
+			<h2>Gestor de Tareas realizado por Antonio Luque Bravo</h2>
+			<a href="https://github.com/Tonylu11"><img src="imagenes/github.svg" alt="Icono de GitHub"/></a>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,204 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url('../imagenes/fondo2.jpeg');
+  background-attachment: fixed;
+  font-family: 'Gloria Hallelujah', normal;
+}
+article h3, article ul, p, nav ul a{
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+article{
+  border: 4px outset #15B6FE;
+  background-color: white;
+  width: 90%;
+  margin: 1em auto;
+  box-shadow: 2px 3px 10px white;
+}
+article ul{
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+article li{
+  color: #15B6FE;
+  list-style: square;
+}
+article span{
+  color: black;
+}
+
+body>header{
+  text-align: center;
+  font-size: 3.2em;
+  padding: 1em;
+  background-color: #002446;
+  color: #15B6FE;
+}
+main{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+nav{
+  text-align: center;
+  background-color: rgba(255,255,255,0.3);
+}
+
+nav>ul>li{
+  display: inline-block;
+  padding: 20px;
+}
+nav>ul>li a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.46em;
+  color: #002446;
+}
+
+nav>ul>li:hover{
+  background-color: #002446;
+  transition: 0.5s all;
+}
+
+nav>ul>li:hover a{
+  color: #15B6FE;
+}
+
+body div>ul{
+    background-color: #191970;
+   background-color: #002446;
+  line-height: 2.2em;
+}
+body>div>ul>li{
+  display: inline-block;
+  width: 9em;
+  padding: 1em 0;
+  transition: 0.5s all;
+}
+body>div>ul>li:hover{
+  background-color: #15B6FE;
+}
+body>div>ul>li:hover a{
+  color: #002446;
+}
+body>div>ul a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body>div{
+  text-align: center;
+}
+
+body>div>ul>li{
+  border-radius: 3px 3px 0px 0px;
+}
+#botones{
+  text-align: right;
+ 
+}
+#botones a img{
+   transition: 1s all;
+}
+#botones  a img:hover{
+  transform: scale(1.3,1.3);
+}
+article>header #modulo{
+  text-align: left;
+}
+
+article p, #nombre{
+  margin: 1em;
+}
+article #fecha{
+  text-align: center;
+}
+
+footer{
+  color: #15B6FE;
+  background-color: #002446;
+  padding: 1em;
+  text-align: center;
+}
+footer img{
+  margin: 15px;
+  width: 5%;
+}
+#three-cols{
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  -ms-column-count: 3;
+  column-count: 3;
+  padding: 1em;
+  color: #002446;
+  *background-color: #5F9EA0;
+  background-color: #037DCA;
+  background-color:#0470B1;
+  *background-color: #02558B;
+  *color: white;
+}
+
+/*FORMULARIO*/
+[required]{
+  border-color: green;
+  box-shadow: 0px 0px 5px green;
+}
+
+[placeholder]{
+  color: #15B6FE;
+}
+#navnuevatarea{
+  border-bottom: 10px solid #002446;
+}
+
+input:invalid{
+  border-color: red;
+  box-shadow: 0px 0px 5px red;
+}
+
+input:invalid{
+  border-color:red;
+  box-shadow: 0px 0px 5px red;
+}
+
+input:focus,textarea:focus{
+  border-color: #15B6FE;
+}
+
+form{
+  margin: 0 auto;
+  width: 40em;
+  padding: 2em;
+  background-color: rgba(255,255,255,0.3);
+}
+form input, form textarea{
+  color: white;
+  margin: 0.3em;
+  background:rgba(0,0,0,0.7);
+  resize: none;
+  width: 80%;
+}
+form p{
+  margin-right: 1em;
+  text-align: right;
+  color: #002446;
+}
+form #enviar{
+  background-color: #15B6FE;
+  color: #002446;
+  border: 3px outset #15B6FE;
+  font-weight: bold;
+  box-shadow: 2px 2px 6px black;
+  transition: 0.5s all;
+}
+form #enviar:hover{
+  background-color: #002446;
+  color: #15B6FE;
+}
+
+
