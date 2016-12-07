@@ -18,47 +18,26 @@
 	</nav>
 		<main>
 			<form action="#" method="post">
-				<table border=0>
-					<tr>
-						<td width=50%>
-							<p>Nombre de la tarea:</p>
-						</td>
-						<td width=50%>
-							<input type="text" required name="nombre" placeholder="ej: Galería" />
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p>Módulo:</p>
-						</td>
-						<td>
-							<input type="text" required placeholder="ej: DAWEC" name="modulo" pattern="^[A-zñáéíóúÁÉÍÓÚ]{1,5}$" title="Cadena de caracteres, máximo 5, no se permiten caracteres especiales" />
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p>Fecha de entrega:</p>
-						</td>
-						<td>
-							<input type="text" required placeholder="28 de Febrero de 2018" name="fecha"/>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<p>Descripción</p>
-						</td>
-						<td>	
-							<textarea required cols=30 rows=5 name="descripcion"></textarea>
-						</td>
-					</tr>
-					<tr>
-						<td>
-						</td>
-						<td>
-							<input type="submit" value="Enviar" id="enviar">
-						</td>
-					</tr>
-				</table>
+				<p>
+					<label>Nombre de la tarea:</label>
+					<input type="text" required name="nombre" placeholder="ej: Galería" />
+				</p>
+				<p>
+					<label>Módulo:</label>
+					<input type="text" required placeholder="ej: DAWEC" name="modulo" pattern="^[A-zñáéíóúÁÉÍÓÚ]{1,5}$" title="Cadena de caracteres, máximo 5, no se permiten caracteres especiales" />
+				</p>
+				<p>
+					<label>Fecha de entrega:</label>
+					<input type="text" required placeholder="28 de Febrero de 2018" name="fecha"/>
+				</p>
+				<p>
+					<label>Descripción:</label>	
+					<textarea required cols=30 rows=5 name="descripcion"></textarea>
+				</p>
+				<p>
+					<label></label>
+					<input type="submit" value="Enviar" id="enviar">
+				</p>
 			</form>
 		</main>
 		<footer id="footerForm">

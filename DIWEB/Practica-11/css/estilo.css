@@ -177,12 +177,20 @@ form input, form textarea{
   margin: 0.3em;
   background:rgba(0,0,0,0.7);
   resize: none;
-  width: 80%;
+  width: 40%;
+  vertical-align: middle;
 }
 form p{
+  text-align: center;
+}
+form label{
+  font-weight: bold;
+  vertical-align: middle;
+  display: inline-block;
   margin-right: 1em;
-  text-align: right;
   color: #002446;
+  min-width: 7.5em;
+  text-align: left;
 }
 form #enviar{
   background-color: #15B6FE;
