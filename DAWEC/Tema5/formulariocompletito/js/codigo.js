@@ -4,6 +4,8 @@
 	let validaciones = [];
 
 	let comprobarNombre = function() {
+		//nombreError.innerHTML = Validar.comprobar(nombre, nombre.value, );
+
 		if (comprobarSiVacio(nombre.value)) {
 			nombreError.innerHTML = "El nombre no puede estar vacío."
 		}else {
@@ -13,6 +15,7 @@
 				nombreError.innerHTML = "Formato incorrecto";	
 			}
 		}
+
 		if (nombreError.innerHTML != "") {
 			validaciones.push(nombre); 
 		}
@@ -239,8 +242,7 @@
 		}
 	}
 
-	let init = function () {
-		//Campos
+	let inicializarCampos = function() {
 		nombre = document.getElementById('nombre');
 		dni = document.getElementById('dni');
 		fecha = document.getElementById('fecha');
@@ -253,8 +255,9 @@
 		condiciones = document.getElementById('condiciones');
 		botonEnviar = document.getElementById('enviar');
 		botonClear = document.getElementById('reset');
+	}
 
-		//Errores de los campos
+	let inicializarErroresCampos = function() {
 		nombreError = document.getElementById('nombreError');
 		dniError = document.getElementById('dniError');
 		fechaError = document.getElementById('fechaError');
@@ -265,8 +268,9 @@
 		urlError = document.getElementById('urlError');
 		ciudadError = document.getElementById('ciudadError');
 		condicionesError = document.getElementById('condicionesError');
-	
-		//eventos
+	}
+
+	let eventosCampos = function() {
 		nombre.addEventListener("blur", comprobarNombre);
 		dni.addEventListener("blur", comprobarDni);
 		fecha.addEventListener("blur", comprobarFecha);
@@ -280,6 +284,17 @@
 		condiciones.addEventListener("blur", comprobarCondiciones);
 		botonEnviar.addEventListener("click", comprobarEnviar);
 		botonClear.addEventListener("click", limpiarForm);
+	}
+
+	let init = function () {
+		//Campos
+		inicializarCampos();
+
+		//Errores de los campos
+		inicializarErroresCampos();
+	
+		//eventos
+		eventosCampos();
 	}
 	window.addEventListener("DOMContentLoaded", init);
 }
