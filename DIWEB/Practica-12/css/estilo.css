@@ -43,7 +43,7 @@ article{
 
 main{
   line-height: 4em;
-  font-size: 300%;
+  *font-size: 300%;
   padding: 12%;
 }
 
