@@ -1,3 +1,4 @@
+/*
 *{
   color: white;
 }
@@ -9,8 +10,7 @@ body{
   background-repeat: no-repeat;
   background-position-x: -70em;
   background-position-y: -5em;
-  background-size: 400rem;
-  
+  background-size: 300rem;
 	text-align: center;
 }
 
@@ -79,13 +79,13 @@ h2{
 
 @media screen and (min-width:360px){
 	body{
-		background-size: 190rem;
+		background-size: 290rem;
 	}
 }
 
 @media screen and (min-width:480px){
   body{
-		background: url("../img/fondoIndex3.jpg") no-repeat fixed;
+		background: url("../img/fondoIndex3.jpg") no-repeat;
 		background-size: space;
 		padding: 0;
 	}
@@ -98,5 +98,35 @@ h2{
 	button{
 		font-size: 160%;
 	}
+}*/
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
 }
+
+body{
+	font-size: 16px;
+  background: url("../img/fondoIndex3.jpg") no-repeat;
+  background-size: 85rem;
+	text-align: center;
+	padding: 12%;
+}
+
+main{
+	font-size: 1.5rem;
+	color: #556B2F;
+	text-shadow: 3px 3px 5px black;
+}
+
+button{
+	background-color: white;
+	color: #819142;
+	padding: 1rem;
+	border: 0;
+	border-radius: 0.3rem;
+}
+
 
