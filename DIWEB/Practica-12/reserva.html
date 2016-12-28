@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Antonio Luque Bravo</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	<body>
+		<header>
+			<h1>Casas Rurales</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="hoteles.html">Inicio</a></li>
+				<li><a href="#">Reserva</a></li>
+			</ul>
+		</nav>
+		<main>
+			<form action="#" method="post">
+				<p>
+					<label>Nombre:</label>
+					<input type="text" required name="nombre" placeholder="ej: Antonio" pattern="^[A-ZAEÍÓÚÑ][a-zñáéíóú]{2,}$" title="Primera letra mayúscula y un mínimo de 3 letras para el nombre"/>
+				</p>
+				<p>
+					<label>Apellidos:</label>
+					<input type="text" required placeholder="ej: Luque Bravo" name="apellidos" pattern="^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{2,}(\s(de|del)?\s?[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{2,})+$" title="Primera letra mayuscula y un mínimo de 3 letras para cada apellido, admite apellidos compuestos (de/del)." />
+				</p>
+				<p>
+					<label>Correo:</label>
+					<input type="text" required placeholder="hola@gmail.com" name="correo"/>
+				</p>
+				<p>
+					<label>Teléfono:</label>
+					<input type="tel" required placeholder="678549654" name="telefono"/>
+				</p>
+				<p>
+					<label>Fecha entrada:</label>
+					<input type="date" required placeholder="23/10/2017" name="fechaentrada"/>
+				</p>
+				<p>
+					<label>Fecha salida:</label>
+					<input type="date" required placeholder="23/11/2017" name="fechasalida"/>
+				</p>
+				<p>
+					<label>NºPersonas:</label>
+					<input type="number" required placeholder="2" min="1" name="numeropersonas"/>
+				</p>
+				<p>
+					<label></label>
+					<input type="submit" value="Enviar" id="enviar">
+				</p>
+			</form>
+		</main>
+		<footer>
+			<h3>Practica 12 Hoteles Rurales Realizado por Antonio Luque Bravo</h3>
+			<a href=""><img src="" alt="Github"></a>
+		</footer>
+	</body>
+</html>
