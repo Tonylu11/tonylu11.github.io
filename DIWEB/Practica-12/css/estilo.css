@@ -106,12 +106,10 @@ h2{
 	list-style: none;
 	text-decoration: none;
 }
-html,body{
-	height: 100%;
-}
+
 body{
 	font-size: 16px;
-  background: url("../img/fondoIndex3.jpg") no-repeat fixed;
+  background: url("../img/fondoIndex2.jpg") no-repeat fixed;
   background-size: 54rem;
 	text-align: center;
 	padding-top: 45%;
