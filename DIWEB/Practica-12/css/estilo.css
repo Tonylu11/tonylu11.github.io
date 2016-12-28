@@ -4,10 +4,14 @@
 
 body{
   text-align: center;
-  background-image: url("../img/fondoIndex3.jpg");
+  background: url("../img/fondoIndex3.jpg") no-repeat;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position-x: -34em;
+  background-position-x: -70em;
+  background-position-y: -5em;
+  background-size: 300rem;
+  line-height: 5em;
+	text-align: center;
 }
 
 header,nav,article header{
@@ -38,6 +42,8 @@ article{
 }
 
 main{
+  line-height: 4em;
+  font-size: 300%;
   padding: 12%;
 }
 
@@ -73,8 +79,16 @@ h2{
 
 @media screen and (min-width: 1200px){
   body{
+    line-height: 1em;
     background-position-x: 0;
+    background-position-y: 0;
+    background-size: 200em;
   }
+  main{
+    line-height: 4em;
+    font-size: 200%;
+    padding: 12%;
+}
 }
 
 @media screen and (min-width: 1920px){
