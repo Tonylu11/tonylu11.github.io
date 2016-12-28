@@ -85,7 +85,7 @@ h2{
 
 @media screen and (min-width:480px){
   body{
-		background: url("../img/fondoIndex3.jpg") no-repeat;
+		background: url("../img/fondoIndex3.jpg") no-repeat fixed;
 		background-size: space;
 		padding: 0;
 	}
