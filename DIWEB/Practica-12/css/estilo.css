@@ -86,17 +86,8 @@ h2{
   }
   main{
     line-height: 4em;
-    font-size: 200%;
+    font-size: 100%;
     padding: 12%;
-}
-}
-
-@media screen and (min-width: 1920px){
-  h1{
-    font-size: 350%;
-    margin: 1.5em 0;
-    color: #556B2F;
-    text-shadow: 2px 2px 4px black;
   }
 }
 
