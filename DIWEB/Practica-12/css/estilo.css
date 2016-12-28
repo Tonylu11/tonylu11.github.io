@@ -132,7 +132,7 @@ button{
 
 @media screen and (min-width:360px){
 	body{
-		background-size: 72rem;
+		background-size: cover;
 	}
 }
 
