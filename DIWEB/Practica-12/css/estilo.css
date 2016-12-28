@@ -106,7 +106,9 @@ h2{
 	list-style: none;
 	text-decoration: none;
 }
-
+html,body{
+	height: 100%;
+}
 body{
 	font-size: 16px;
   background: url("../img/fondoIndex3.jpg") no-repeat fixed;
@@ -114,6 +116,7 @@ body{
 	text-align: center;
 	padding-top: 45%;
 	padding-bottom: 50%;
+	height: 100%;
 }
 
 main{
