@@ -1,0 +1,129 @@
+*{
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  width: 9em;
+  margin: 0 auto;
+}
+
+article{
+  overflow: hidden;
+  vertical-align: top;
+  display: inline-flex;
+  flex-flow: column;
+  width: 35%;
+  box-shadow: 2px 2px 3px black;
+  margin: 1em;
+  max-width: 15em;
+  min-width: 15em;
+  border: 1px solid #6B8E23;
+  background-color: rgba(255,255,255,0.2);
+}
+
+article header{
+  background-color: #6B8E23;
+}
+
+button{
+	background-color: white;
+	color: #819142;
+	border-radius: 0.3rem;
+	cursor: pointer;
+  padding: 0.5em 0.8em;
+  margin: 1em auto;
+}
+
+body{
+  text-align: center;
+  background:url("../img/negro.png"), url("../img/fondoIndex2.jpg")  no-repeat;
+  background-attachment: fixed;
+  background-position-x: -25em;
+  background-position-y: -10em;
+}
+
+footer{
+  background-color: #6B8E23;
+  padding: 2em;
+}
+
+h1{
+  font-size: 4em;
+  color: #6B8E23;
+  text-shadow: 2px 2px 4px black;
+}
+
+h2{
+  margin-top: 0;
+  padding: 0.5em;
+}
+
+header,nav,article header{
+  text-align: center;
+}
+
+img{
+  height: 10rem;
+}
+
+li{
+  padding: 0.9em;
+  transition: 1s all;
+}
+
+li:hover{
+  background-color: #808000;
+  color: black;
+}
+
+main{
+  padding: 1em;
+}
+
+nav{
+  background-color: rgba(129,145,66,0.7);
+}
+
+p{
+  margin-top: 1em; 
+  font-weight: bold;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+@media screen and (min-width:360px){
+	body{
+		background-size: 290rem;
+	}
+}
+
+@media screen and (min-width:480px){
+  body{
+		background: url("../img/negro.png"), url("../img/fondoIndex3.jpg") no-repeat;
+		background-size: cover;
+		padding: 0;
+    background-position-x: -35em;
+	}
+	h1{
+		font-size: 300%;
+	}
+	button{
+		font-size: 160%;
+	}
+  li{
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width:768px){
+  body{
+		padding: 0;
+    background-position-x: 0;
+	}
+}
