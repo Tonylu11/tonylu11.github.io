@@ -46,8 +46,15 @@ body{
 }
 
 footer{
+  font-size:0.75em;
   background-color: #6B8E23;
-  padding: 2em;
+  padding: 0.5em;
+  line-height: 1.3em;
+}
+
+footer img{
+  margin-top: 0.3em;
+  width: 10%;
 }
 
 h1{
@@ -65,7 +72,7 @@ header,nav,article header{
   text-align: center;
 }
 
-img{
+article img{
   height: 10rem;
 }
 
@@ -126,4 +133,11 @@ ul{
 		padding: 0;
     background-position-x: 0;
 	}
+  footer{
+    font-size: 1em;
+  }
+  footer img{
+    width: 4%;
+  }
+  
 }
