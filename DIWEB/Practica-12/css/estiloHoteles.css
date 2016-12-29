@@ -48,8 +48,9 @@ body{
 footer{
   font-size:0.75em;
   background-color: #6B8E23;
-  padding: 0.5em;
+  padding: 0.5em 0;
   line-height: 1.3em;
+
 }
 
 footer img{
@@ -140,4 +141,12 @@ ul{
     width: 4%;
   }
   
+}
+
+@media screen and (min-width:1360px){
+  footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
