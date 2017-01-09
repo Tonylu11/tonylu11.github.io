@@ -44,6 +44,7 @@ form input{
   flex: 2;
   max-width: 8em;
   margin-right: 1em;
+  border: 1px inset white;
 }
 
 form p{
@@ -93,6 +94,13 @@ ul{
   padding: 0;
 }
 
+#enviar{
+  padding: 0.6em;
+}
+
+[placeholder]{
+  color: white;
+}
 @media screen and (min-width:480px){
   body{
 		background: url("../img/negro.png"), url("../img/fondoIndex3.jpg") no-repeat;
