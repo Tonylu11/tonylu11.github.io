@@ -80,13 +80,13 @@ ol ol{
  margin: 0 auto;
 }
 
-#proyectos,#tema1,#tema2,#tema3,#tema4,#tema5,#tema6,#examenes{
+#proyectos,#tema1,#tema2,#tema3,#tema4,#tema5,#tema6,#tema7,#examenes{
   vertical-align: top;
   padding:1em;
   text-align: left;
 }
 
-#proyectos *,#tema1 *,#tema2 *,#tema3 *,#tema4 *,#tema5 *,#tema6 *,#examenes *{
+#proyectos *,#tema1 *,#tema2 *,#tema3 *,#tema4 *,#tema5 *,#tema6 *,#tema7 *,#examenes *{
   display: inline-block;
 }
 
@@ -128,7 +128,7 @@ ol ol{
   border: 3px solid salmon;
 }
 
-#tema1 a,#tema2 a,#tema3 a,#tema4 a,#tema5 a,#tema6 a,#proyectos a,#examenes a{
+#tema1 a,#tema2 a,#tema3 a,#tema4 a,#tema5 a,#tema6 a,#tema7 a,#proyectos a,#examenes a{
   padding: 5px;
   margin: 5px;
   background-color: #4286f4;
@@ -137,12 +137,12 @@ ol ol{
   transition: 0.5s all;
 }
 
-#tema1 a:hover,#tema2 a:hover,#tema3 a:hover,#tema4 a:hover,#tema5 a:hover,#tema6 a:hover,#examenes a:hover,#proyectos a:hover{
+#tema1 a:hover,#tema2 a:hover,#tema3 a:hover,#tema4 a:hover,#tema5 a:hover,#tema6 a:hover,#tema7 a:hover,#examenes a:hover,#proyectos a:hover{
   color:black;
   background-color: lightblue;
 }
 
-#tema1 label, #tema2 label, #tema3 label,#tema4 label, #tema5 label, #tema6 label,#examenes label, #proyectos label{
+#tema1 label, #tema2 label, #tema3 label,#tema4 label, #tema5 label, #tema6 label, #tema7 label,#examenes label, #proyectos label{
   display: block;
 }
 
