@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 *{
   color: white;
   padding: 0;
@@ -30,6 +31,7 @@ article header{
 }
 
 button{
+  font-family: 'Berkshire Swash', cursive;
 	background-color: white;
 	color: #819142;
 	border-radius: 0.3rem;
@@ -46,6 +48,7 @@ body{
 }
 
 footer{
+  font-family: 'Berkshire Swash', cursive;
   font-size:0.75em;
   background-color: #6B8E23;
   padding: 0.5em 0;
@@ -59,12 +62,14 @@ footer img{
 }
 
 h1{
-  font-size: 4em;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3em;
   color: #6B8E23;
   text-shadow: 2px 2px 4px black;
 }
 
 h2{
+  font-family: 'Berkshire Swash', cursive;
   margin-top: 0;
   padding: 0.5em;
 }
@@ -92,6 +97,7 @@ main{
 }
 
 nav{
+  font-family: 'Berkshire Swash', cursive;
   background-color: rgba(129,145,66,0.7);
 }
 
@@ -105,14 +111,11 @@ ul{
   padding: 0;
 }
 
-
-
 @media screen and (min-width:480px){
   body{
 		background: url("../img/negro.png"), url("../img/fondoIndex3.jpg") no-repeat fixed;
 		background-size: cover;
 		padding: 0;
-    background-position-x: -35em;
 	}
 	h1{
 		font-size: 300%;
@@ -137,5 +140,9 @@ ul{
   
   footer img{
     width: 4%;
+  }
+  
+  h1{
+    font-size: 4em;
   }
 }

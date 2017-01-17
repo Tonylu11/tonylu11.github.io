@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 *{
+  font-family: 'Berkshire Swash', cursive;
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -21,6 +23,7 @@ main{
 }
 
 button{
+	font-family: 'Berkshire Swash', cursive;
 	background-color: white;
 	color: #819142;
 	padding: 0.6rem;
