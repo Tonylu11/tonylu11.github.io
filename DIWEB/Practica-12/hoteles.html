@@ -6,6 +6,8 @@
 		<title>Antonio Luque Bravo</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/estiloHoteles.css">
+		<script src="js/jquery-3.1.1.js"></script>
+		<script src="js/codigo.js"></script>
 	</head>
 	<body>
 		<header>
@@ -13,79 +15,92 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href="#">Inicio</a></li><li><a href="reserva.html">Reserva</a></li>
+				<li><a href="#">Inicio</a></li><li><a href="reserva.html">Reserva</a></li><li id="botonFiltro"><input type="button" value="☰" id="icono"></li>
 			</ul>
 		</nav>
-		<main>
-			<section>
-				<article>
-					<header>
-						<h2>Casa 1</h2>
-					</header>
-					<img src="img/casa1-1.jpg" alt="IMAGEN CASA 1">
-					<div class="texto">
-						<p>Habitaciones: 8</p>
-						<p>Precio: 103€ por noche</p>
-					</div>
-					<a href="reserva.html"><button>Reservar</button></a>
-				</article>
-				<article>
-					<header>
-						<h2>Casa 2</h2>
-					</header>
-					<img src="img/casa2-2.jpg" alt="IMAGEN CASA 2">
-					<div class="texto">
-						<p>Habitaciones: 15</p>
-						<p>Precio: 210€ por noche</p>
-					</div>
-					<a href="reserva.html"><button>Reservar</button></a>
-				</article>
-				<article>
-					<header>
-						<h2>Casa 3</h2>
-					</header>
-					<img src="img/casa3-3.jpg" alt="IMAGEN CASA 3">
-					<div class="texto">
-						<p>Habitaciones: 4</p>
-						<p>Precio: 60€ por noche</p>
-					</div>
-					<a href="reserva.html"><button>Reservar</button></a>
-				</article>
-				<article>
-					<header>
-						<h2>Casa 4</h2>
-					</header>
-					<img src="img/casa4-4.jpg" alt="IMAGEN CASA 4">
-					<div class="texto">
-						<p>Habitaciones: 10</p>
-						<p>Precio: 120€ por noche</p>
-					</div>
-					<a href="reserva.html"><button>Reservar</button></a>
-				</article>
-				<article>
-					<header>
-						<h2>Casa 5</h2>
-					</header>
-					<img src="img/casa5-5.jpg" alt="IMAGEN CASA 5">
-					<div class="texto">
-						<p>Habitaciones: 2</p>
-						<p>Precio: 25€ por noche</p>
-					</div>
-					<a href="reserva.html"><button>Reservar</button></a>
-				</article>
-				<article>
-					<header>
-						<h2>Casa 6</h2>
-					</header>
-					<img src="img/casa6-6.jpg" alt="IMAGEN CASA 6">
-					<div class="texto">
-						<p>Habitaciones: 7</p>
-						<p>Precio: 77€ por noche</p>
-					</div>
-					<a href="reserva.html"><button>Reservar</button></a>
-				</article>
-			</section>
-		</main>
+		<div id="principal">
+			<main>
+				<section>
+					<article>
+						<header>
+							<h2>Casa 1</h2>
+						</header>
+						<img src="img/casa1-1.jpg" alt="IMAGEN CASA 1">
+						<div class="texto">
+							<p>Habitaciones: 8</p>
+							<p>Precio: 103€ por noche</p>
+						</div>
+						<a href="reserva.html"><button>Reservar</button></a>
+					</article>
+					<article>
+						<header>
+							<h2>Casa 2</h2>
+						</header>
+						<img src="img/casa2-2.jpg" alt="IMAGEN CASA 2">
+						<div class="texto">
+							<p>Habitaciones: 15</p>
+							<p>Precio: 210€ por noche</p>
+						</div>
+						<a href="reserva.html"><button>Reservar</button></a>
+					</article>
+					<article>
+						<header>
+							<h2>Casa 3</h2>
+						</header>
+						<img src="img/casa3-3.jpg" alt="IMAGEN CASA 3">
+						<div class="texto">
+							<p>Habitaciones: 4</p>
+							<p>Precio: 60€ por noche</p>
+						</div>
+						<a href="reserva.html"><button>Reservar</button></a>
+					</article>
+					<article>
+						<header>
+							<h2>Casa 4</h2>
+						</header>
+						<img src="img/casa4-4.jpg" alt="IMAGEN CASA 4">
+						<div class="texto">
+							<p>Habitaciones: 10</p>
+							<p>Precio: 120€ por noche</p>
+						</div>
+						<a href="reserva.html"><button>Reservar</button></a>
+					</article>
+					<article>
+						<header>
+							<h2>Casa 5</h2>
+						</header>
+						<img src="img/casa5-5.jpg" alt="IMAGEN CASA 5">
+						<div class="texto">
+							<p>Habitaciones: 2</p>
+							<p>Precio: 25€ por noche</p>
+						</div>
+						<a href="reserva.html"><button>Reservar</button></a>
+					</article>
+					<article>
+						<header>
+							<h2>Casa 6</h2>
+						</header>
+						<img src="img/casa6-6.jpg" alt="IMAGEN CASA 6">
+						<div class="texto">
+							<p>Habitaciones: 7</p>
+							<p>Precio: 77€ por noche</p>
+						</div>
+						<a href="reserva.html"><button>Reservar</button></a>
+					</article>
+				</section>
+			</main>
+			<aside>
+				<h2>Filtros:</h2>
+				<ul>
+		            <li><label>Filtro 1</label><input type="checkbox"/></li>
+		            <li><label>Filtro 2</label><input type="checkbox"/></li>
+		            <li><label>Filtro 3</label><input type="checkbox"/></li>
+		            <li><label>Filtro 4</label><input type="checkbox"/></li>
+
+		            <li><a href="#">Aplicar</a></li>
+	        	</ul>
+			</aside>
+		</div>
 		<footer>
 			<h3>Practica 12 Hoteles Rurales Realizado por Antonio Luque Bravo</h3>
 			<a href="https://github.com/Tonylu11"><img src="img/github.svg" alt="Icono de GitHub"/></a>

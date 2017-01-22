@@ -4,6 +4,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 		<meta charset="UTF-8">
 		<title>Antonio Luque Bravo</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			  rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/estiloReserva.css">
 	</head>
@@ -18,18 +20,54 @@
 		</nav>
 		<main>
 			<div id="descripcion">
-				<img id="fotocasa" src="img/casa1-1.jpg">
+				<header>Casa 1</header>
+				<img class="fotocasa" src="img/casa1-1.jpg">
+				<img class="fotocasa" src="img/casa2-2.jpg">
+				<img class="fotocasa" src="img/casa3-3.jpg">
+				<img class="fotocasa" src="img/casa4-4.jpg">
 				<div id="textoDescripcion">
 					<label>
 						<p class="destacado">Habitaciones: 8</p>
 						<p>
 						<h3>Descripción</h3>
-						La casa cuenta con un amplio salón comedor con chimenea de leña, un cómodo sofá, para relajarse después de las excursiones y dos espléndidas mesas para reuniones o comidas de 8-10 comensales. La cocina, de estilo rústico, está completamente equipada y comunica con una segunda cocina exterior, ideal para cocinar al aire libre. Las habitaciones son muy acogedoras y cálidas, ideales para el descanso. El porche, anexo al salón, está acondicionado para disfrutar de una agradable tertulia o de una tarde de lectura en contacto con la naturaleza.</p>
+						La casa cuenta con:
+						<ul>
+						 	<li>Amplio salón comedor con chimenea de leña</li>
+						 	<li>Un cómodo sofá, para relajarse después de las excursiones</li>
+						 	<li>Dos espléndidas mesas para reuniones o comidas de 8-10 comensales</li>
+						 </ul>La cocina, de estilo rústico, está completamente equipada y comunica con una segunda cocina exterior, ideal para cocinar al aire libre. Las habitaciones son muy acogedoras y cálidas, ideales para el descanso. El porche, anexo al salón, está acondicionado para disfrutar de una agradable tertulia o de una tarde de lectura en contacto con la naturaleza.</p>
 						<p class="destacado">Precio: 103€ por noche</p>
 					</label>
 				</div>
 			</div>
+			<div id="servicios">
+				<header>Servicios incluidos</header>
+					<p>
+						<i class="material-icons">wifi</i> <label>Wi-Fi</label>
+					</p>
+
+					<p>
+						<i class="material-icons">pool</i> <label>Piscina</label>
+					</p>
+					<p>
+						<i class="material-icons">pets</i> <label>Mascotas permitidas</label>
+					</p>
+
+				</div>
+			</div>
+			<div id="localizacion">
+				<header>Localización</header>
+				<p>
+					<iframe src="https://www.google.com/maps/d/embed?mid=1G9R_uKSyIHfYYM0NSE_ns9zmPvM"></iframe>
+				</p>
+
+			</div>
+			</div>
+
 			<form action="#" method="post">
+				<header>
+					<p>Datos de Reserva</p>
+				</header>
 				<p>
 					<label>Nombre:</label>
 					<input type="text" required name="nombre" placeholder="ej: Antonio" pattern="^[A-ZAEÍÓÚÑ][a-zñáéíóú]{2,}$" title="Primera letra mayúscula y un mínimo de 3 letras para el nombre"/>

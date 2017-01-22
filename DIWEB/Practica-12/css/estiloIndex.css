@@ -30,7 +30,7 @@ button{
 	border: 0;
 	border-radius: 0.3rem;
 	cursor: pointer;
-	animation: botonAparece 5s;
+	animation: botonAparece 3s;
 }
 @keyframes botonAparece {
 	0% {opacity: 0;}

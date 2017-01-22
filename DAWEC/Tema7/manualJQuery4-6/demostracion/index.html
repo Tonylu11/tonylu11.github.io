@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Antonio Luque Bravo</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/codigo.js" type="text/javascript" defer></script>
+		<script src="js/jquery-3.1.1.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<h1>Página de Demostración Antonio Luque Bravo</h1>
+		<div id="punto1">
+			<h2>Checked</h2>
+			<hr>
+			<h3>CheckBox</h3>
+			<form id="formcheckbox">
+				<input type="checkbox" name="newsletter" value="Cada hora" checked>
+
+				<input type="checkbox" name="newsletter" value="Diariamente">
+				<input type="checkbox" name="newsletter" value="Semanalmente">
+
+				<input type="checkbox" name="newsletter" value="Mensualmente" checked>
+				<input type="checkbox" name="newsletter" value="Anualmente">
+			</form>
+			<div id="textoCheckBox"></div>
+			<div id="textoCheckBox2"></div>
+			<div id="textoCheckBox3"></div>
+			<h3>Radio buttons</h3>
+			<form id="formRadioButton">
+				<div>
+					<input type="radio" name="fruta" value="naranja" id="naranja">
+					<label for="naranja">naranja</label>
+				</div>
+				<div>
+					<input type="radio" name="fruta" value="manzana" id="manzana">
+					<label for="manzana">manzana</label>
+				</div>
+				<div>
+					<input type="radio" name="fruta" value="platano" id="platano">
+					<label for="platano">platano</label>
+				</div>
+			</form>
+
+			<div id="textoRadioButton"></div>
+			<div id="textoRadioButton2"></div>
+			<div id="textoRadioButton3"></div>
+		</div>
+		<div id="punto4" style="text-align: left">
+			<h2>Punto 4</h2>
+			<ul>
+				<li>
+					<h4>event.initEvent</h4>
+					<p>Inicia el valor de un evento que se ha creado vía la interfaz DocumentEvent.</p>
+				</li>
+				<li>
+					<h4>event.initKeyEvent</h4>
+					<p>Inicia un evento del teclado.</p>
+				</li>
+				<li>
+					<h4>event.initMouseEvent</h4>
+					<p>Inicia un evento del ratón una vez que se ha creado.</p>
+				</li>
+				<li>
+					<h4>event.initUIEvent</h4>
+					<p>Inicia un evento de la interfaz de usuario (UI) una vez que se ha creado.</p>
+				</li>
+				<li>
+					<h4>event.preventDefault</h4>
+					<p>Cancela el evento (si éste es anulable).</p>
+				</li>
+				<li>
+					<h4>event.stopPropagation</h4>
+					<p>Para la propagación de los eventos más allá en el DOM</p>
+				</li>
+			</ul>
+		</div>
+		<div id="punto5">
+			<h2>Objeto event</h2>
+			<div id="textopunto5"></div>
+		</div>
+		<div id="punto6" style="text-align: left">
+			<h2>Diferencias entre .on(), live(), bind(), delegate()</h2>
+			<ul>
+				<li>
+					<h4>.on()</h4>
+					<p>Asigna una funcion manejadora
+						para uno o varios eventos
+						a los elementos seleccionados</p>
+				</li>
+				<li>
+					<h4>live() (Deprecated)</h4>
+
+					<p>Asocia el evento al root del DOM y cuando un evento se dispara
+					y llega al root se comprueba si el selector concuerda
+						y se ejecuta la función.
+					Se puede crear dinámicamente</p>
+				</li>
+				<li>
+					<h4>bind() (Deprecated)</h4>
+
+					<p>Asocia un evento a un elemento del DOM.</p>
+				</li>
+				<li>
+					<h4>delegate() (Deprecated)</h4>
+
+					<p>Parecida a live con la diferencia de que podemos asocuar el evento
+					a un selector en lugar de asociar el selector y el evento al document</p>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
