@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Antonio Luque Bravo</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="jquery-validation-1.16.0/dist/jquery.validate.js" type="text/javascript" charset="utf-8" defer></script>
+	<script src="js/formularioEmpleado.js" type="text/javascript" charset="utf-8" defer></script>
+	<script src="js/empleado.js" type="text/javascript" charset="utf-8" defer></script>
+</head>
+<body>
+	<h1>Antonio Luque Bravo</h1>
+	<h2>Examen Diciembre 2016</h2>
+	<form id="formEmpleado">
+		<label>Nombre:</label><input type="text" id="nombre"/><span id="errorNombre"></span><br/>
+		<label>Fecha de Nacimiento:</label><input type="text" id="fechanac"/><span id="errorFechaNac"></span><br/>
+		<label>DNI:</label><input type="text" id="dni"/><span id="errorDni"></span><br/>
+		<input type="checkbox" id="condiciones"/><label>Aceptar condiciones de uso</label><span id="errorCondiciones"></span><br/>
+		<input type="submit" id="nuevoempleado">Nuevo Empleado</input>
+	</form>
+</body>
+</html>

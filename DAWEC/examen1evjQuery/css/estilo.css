@@ -1,0 +1,11 @@
+
+label{
+  display: inline-block;
+  width: 12em;
+}
+#nuevoempleado,label{
+  margin: 11px auto;
+}
+#errorCondiciones,#errorDni,#errorFechaNac,#errorNombre{
+  color: red;
+}
