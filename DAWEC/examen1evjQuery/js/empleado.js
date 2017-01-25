@@ -5,7 +5,8 @@ function Empleado (nombre, fechaNac, dni) {
 }
 
 Empleado.prototype.crearNuevaVentana = function () {
-	let finAnio = new Date(2016,11,31);
+	let fecha = new Date();
+	let finAnio = new Date(fecha.getFullYear(),11,31);
 	let diasFinAnio = finAnio - new Date();
 	diasFinAnio = Math.floor(diasFinAnio/1000/60/60/24)+1;
 	let ventanaNueva = window.open("","","width=500,height=300,top=50,left=50");
