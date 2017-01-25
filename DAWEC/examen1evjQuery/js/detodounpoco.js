@@ -1,17 +1,29 @@
 {
-	let botonInforma,botonRaton,botonSalir,movimientoRatonDiv;
-	let texto,parrafo;
 	let diasDeLaSemana,fecha;
+	$(document).ready(function () {
+		$("#informa").on('click',function (e) {
+			diasDeLaSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+			fecha = new Date();
+			//DIA ACTUAL
+			$("#movimiento").append(calcularDiaActual);
+			//MANEJO HORA ACTUAL
+			$("#movimiento").append(manejarHoraActual);
+		});
 
-	let calcularDiaActual = function () {
-		parrafo = window.document.createElement('p');
-		texto = document.createTextNode("Hoy es " + diasDeLaSemana[fecha.getDay()]);
-		parrafo.appendChild(texto);
-		document.body.appendChild(parrafo);
+		$("#raton").on('click',function (e) {
+			$("#movimiento").html("<h3>raton(x,y) [" + e.clientX + "," + e.clientY + "]");
+			setTimeout(limpiar,2000);
+		});
+		
+		$("#salir").on('click',function (e) {
+			window.close();
+		});
+	});
+	let limpiar = function () {
+		$("#movimiento").html("");
 	}
 
 	let manejarHoraActual = function () {
-		parrafo = window.document.createElement('p');
 		let minutos = "";
 		if (fecha.getMinutes() < 10) {
 			minutos = "0" + fecha.getMinutes();
@@ -19,52 +31,17 @@
 			minutos = fecha.getMinutes();
 		}
 		if (fecha.getHours() > 18) {
-			texto = document.createTextNode("Son las "+ fecha.getHours() + ":" + minutos +". Ya es hora de que dejes de trabajar. Hay que conciliar la vida laboral con la familiar");
+			texto = "<h4>Son las "+ fecha.getHours() + ":" + minutos +". Ya es hora de que dejes de trabajar. Hay que conciliar la vida laboral con la familiar</h4>";
 		}else if (fecha.getHours() < 8) {
-			texto = document.createTextNode("Son las "+ fecha.getHours() + ":" + minutos +". Ya es hora de que comiences a trabajar. Hay que levantar el país");
+			texto = "<h4>Son las "+ fecha.getHours() + ":" + minutos +". Ya es hora de que comiences a trabajar. Hay que levantar el país</h4>";
 		}else if (fecha.getHours() > 8  && fecha.getHours() < 18) {
-			texto = document.createTextNode("Son las "+ fecha.getHours() + ":" + minutos +". Pronto llegan las vacaciones. Aguanta");
+			texto = "<h4>Son las "+ fecha.getHours() + ":" + minutos +". Pronto llegan las vacaciones. Aguanta</h4>";
 		}
-		parrafo.appendChild(texto);
-		document.body.appendChild(parrafo);
+		return texto;
 	}
 
-	let diaYHoraFn = function () {
-		diasDeLaSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
-		fecha = new Date();
-		//DIA ACTUAL
-		calcularDiaActual();
-		//MANEJO HORA ACTUAL
-		manejarHoraActual();
+	let calcularDiaActual = function () {
+		texto = "<h4>Hoy es " + diasDeLaSemana[fecha.getDay()] + "</h4>";
+		return texto;
 	}
-	
-	let mensajeRaton = function (e) {
-		parrafoPosicion = document.createElement('p');
-		parrafoPosicion.appendChild(document.createTextNode("raton(x,y) [" + e.clientX + "," + e.clientY + "]"));
-		movimientoRatonDiv.appendChild(parrafoPosicion);
-		setTimeout(limpiar, 2000);
-	}
-
-	let limpiar = function () {
-		movimientoRatonDiv.innerHTML = "";
-	}
-
-	let mostrarPosicionRatonFn = function () {
-		movimientoRatonDiv.addEventListener('click', mensajeRaton);
-	}
-
-	let salirVentana = function () {
-		window.close();
-	}
-	let init = function () {
-		botonInforma = document.getElementById('informa');
-		botonRaton = document.getElementById('raton');
-		botonSalir = document.getElementById('salir');
-		movimientoRatonDiv = document.getElementById('movimiento');
-
-		botonInforma.addEventListener('click', diaYHoraFn);
-		botonRaton.addEventListener('click', mostrarPosicionRatonFn);
-		botonSalir.addEventListener('click', salirVentana);
-	}
-	window.addEventListener("DOMContentLoaded", init);
 }

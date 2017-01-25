@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d2cfc2c-53d0-42d2-9bc8-bfbad7fb28e0" name="Default" comment="Manual JQuery Parte 1, Parte 2 y Parte 3">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DAWEC/examen1evjQuery/jquery-validation-1.16.0.zip" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DIWEB/Practica-12/img/fondoIndex.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DIWEB/Practica-12/img/casa1-1.jpg" afterPath="$PROJECT_DIR$/DIWEB/Practica-12/img/casa1-1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAWEC/examen1evjQuery/formularioEmpleado.html" afterPath="$PROJECT_DIR$/DAWEC/examen1evjQuery/formularioEmpleado.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAWEC/examen1evjQuery/js/empleado.js" afterPath="$PROJECT_DIR$/DAWEC/examen1evjQuery/js/empleado.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAWEC/examen1evjQuery/js/formularioEmpleado.js" afterPath="$PROJECT_DIR$/DAWEC/examen1evjQuery/js/formularioEmpleado.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DAWEC/examen1evjQuery/js/detodounpoco.js" afterPath="$PROJECT_DIR$/DAWEC/examen1evjQuery/js/detodounpoco.js" />
     </list>
     <ignored path="tonylu11.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/DAWEC/examen1evjQuery/formularioEmpleado.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.70071685">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <caret line="23" column="39" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -182,6 +176,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -326,8 +322,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -417,7 +411,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30484116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30937973" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -486,6 +480,27 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DAWEC/examen1evjQuery/js/empleado.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+          <folding>
+            <marker date="1485205855059" expanded="true" signature="454:880" placeholder="..." />
+            <marker date="1485205855059" expanded="true" signature="567:860" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAWEC/examen1evjQuery/js/formularioEmpleado.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="177" column="42" selection-start-line="177" selection-start-column="42" selection-end-line="177" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DAWEC/examen1evjQuery/formularioEmpleado.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -841,7 +856,7 @@
     <entry file="file://$PROJECT_DIR$/DAWEC/examen1evjQuery/formularioEmpleado.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.70071685">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <caret line="23" column="39" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="39" />
           <folding />
         </state>
       </provider>

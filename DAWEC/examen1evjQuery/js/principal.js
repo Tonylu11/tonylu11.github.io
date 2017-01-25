@@ -1,17 +1,18 @@
 {
-	let enlaceDeTodoUnPoco,botonEmpleado,ventanaDeTodoUnPoco;
+	let ventanaDeTodoUnPoco;
 
 	let irFormularioEmpleado = function () {
 		window.open("formularioEmpleado.html");
 	}
 
 	let crearVentanaDeTodoUnPoco = function (e) {
-		//e.preventDefault();
 		ventanaDeTodoUnPoco = window.open("", "", "width=500,height=500");
 		ventanaDeTodoUnPoco.document.open();
-		ventanaDeTodoUnPoco.document.write("<html>"+
+		ventanaDeTodoUnPoco.document.write("<html lang='es'>"+
 												"<head>"+
 													"<title>Antonio Luque Bravo</title>" +
+													"<meta charset='UTF-8'>" +
+													"<script src='js/jquery-3.1.1.js' type='text/javascript' charset='utf-8'></script>" +
 													"<script src='js/detodounpoco.js' type='text/javascript' defer></script>" +
 												"</head>" + 
 												"<body>" + 
@@ -23,11 +24,8 @@
 											"</html>");
 		ventanaDeTodoUnPoco.document.close();
 	}
-	let init = function () {
-		enlaceDeTodoUnPoco = document.getElementById('detodounpoco');
-		botonEmpleado = document.getElementById('empleado');
-		enlaceDeTodoUnPoco.addEventListener("click", crearVentanaDeTodoUnPoco);
-		botonEmpleado.addEventListener("click", irFormularioEmpleado);
-	}
-	window.addEventListener("DOMContentLoaded", init);
+	$(document).ready(function () {
+		$("#detodounpoco").on('click', crearVentanaDeTodoUnPoco);
+		$("#empleado").on('click', irFormularioEmpleado);
+	});
 }
