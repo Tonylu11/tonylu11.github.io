@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Antonio Luque Bravo</title>
 	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="js/jQuery-Form-Validator-master/src/theme-default.css">
 	<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/jQuery-Form-Validator-master/form-validator/jquery.form-validator.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/formularioEmpleado.js" type="text/javascript" charset="utf-8"></script>
@@ -14,7 +15,7 @@
 	<h2>Examen Diciembre 2016</h2>
 	<form id="formEmpleado">
 		<label>Nombre:</label>
-		<input type="text" id="nombre" data-validation-regexp="^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{3,}\s[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{3,}(\s[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{3,})?$" data-validation-help="Formato válido: Aaa(o más) Bbb(o más) Ccc(o más)" data-validation-error-msg="Nombre no válido">
+		<input type="text" id="nombre" data-validation="custom" data-validation-regexp="^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{3,}\s[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{3,}(\s[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{3,})?$" data-validation-help="Formato válido: Aaa(o más) Bbb(o más) Ccc(o más)" data-validation-error-msg="Nombre no válido">
 
 		<br/>
 
@@ -28,7 +29,7 @@
 
 		<br/>
 
-		<input type="checkbox" id="condiciones" data-validation="required"/>
+		<input type="checkbox" id="condiciones" data-validation="required" data-validation-error-msg="Debes aceptar las condiciones de uso"/>
 		<label>Aceptar condiciones de uso</label>
 
 		<br/>

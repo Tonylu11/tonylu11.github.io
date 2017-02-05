@@ -1,0 +1,195 @@
+borderPadding = 5px
+azulMarino = #000080
+blanco = #fff
+
+border-radius()
+	border-radius arguments
+transition()
+	transition arguments
+	-webkit-transition arguments
+	-moz-transition arguments
+	-ms-transition arguments
+	-o-transition arguments
+transform()
+	transform scale(arguments)
+	-webkit-transform scale(arguments)
+	-moz-transform scale(arguments)
+	-ms-transform scale(arguments)
+	-o-transform scale(arguments)
+*
+	margin 0 auto
+	
+article
+	display inline-block
+
+aside
+	border borderPadding solid azulMarino
+	border-radius(borderPadding)
+	display block
+	margin 2%
+	padding borderPadding*2
+	text-align center
+	width 18%
+	a
+		text-decoration none
+
+body
+	color blanco
+	font-family 'Open Sans' sans-serif
+	font-size 16px
+	max-width 1200px
+	text-shadow 2px 2px 0 rgba(0,0,0,.3)
+	
+header
+	border-radius(borderPadding)
+	
+footer
+	background rbga(70,130,180,.5)
+	max-width 1200px
+	ul
+		font-size 0
+		padding 0
+		text-align center
+		width 100%
+	> ul > li
+			display inline-block
+			font-size 9px
+			height borderPadding+20
+			line-height: borderPadding+20
+			margin 0 5%
+			padding borderPadding+5
+			vertical-align top
+			width 10%
+	ul
+		li
+			img
+				height borderPadding*borderPadding
+			a
+				color azulMarino
+				font-weight bold
+				text-align center
+				text-decoration none
+				text-transform uppercase
+				
+				&:hover
+					color blanco
+nav
+	border-radius(borderPadding)
+	ul
+		font-size 0
+		padding 0
+		li
+			background rgba(70,130,180,.5)
+			display inline-block
+			font-size 16px
+			height borderPadding*10
+			line-height borderPadding*10
+			padding borderPadding+5 0
+			vertical-align top
+			width 25%
+			
+			&:hover
+				background rgba(70,130,180,.7)
+				box-shadow inset blanco 0px 8px 8px
+			
+			img
+				height borderPadding*10
+				
+			a
+				color azulMarino
+				display block
+				font-weight bold
+				text-align center
+				text-decoration none
+				text-transform uppercase
+				
+				&:hover
+					color blanco
+section
+	text-align center
+	width 70%
+	
+	article
+		border 2px solid azulMarino
+		border-radius(borderPadding)
+		box-shadow borderPadding borderPadding borderPadding steelblue
+		color black
+		font-size 0.8em
+		margin 1%
+		padding borderPadding/2
+		width 150px
+		
+		img
+			transition(.3s)
+			box-shadow: 8px 8px borderPadding*2 steelblue
+			height 150px
+			width 150px
+		
+		&:hover
+			img
+				transform(1.1)
+				
+section
+aside
+	display inline-block
+	vertical-align top
+	
+#contenedor
+	background lightcyan
+	display inline-block
+	max-width 1200px
+	text-align center
+
+.personales
+	padding-bottom 0.5em
+	
+	h2
+		text-shadow 2px 2px borderPadding*2 blanco
+
+.publicidad
+	
+	img
+		height 120px
+		padding-bottom 2em
+		width 120px
+
+.publicidad_titulo
+	padding 1em 1em
+		
+.Redes_sociales
+	
+	img
+		height 64px
+		width 64px
+		
+@media screen and (max-width 800px)
+	nav
+		ul
+			li
+				width 50%
+				
+				img
+					height 80%
+	.publicidad
+		img
+			height 90px
+			padding 1em 1em
+			width 90px
+	.publicidad_titulo
+		h2
+			font-size 1em
+	
+@media screen and (max-width 550px)
+	aside
+		width 60%
+	
+	section
+		width 100%
+	
+	.publicidad_titulo
+		h2
+			font-size 1.5em
+
+@media screen and (max-width 440px)
+	footer
+		display none
