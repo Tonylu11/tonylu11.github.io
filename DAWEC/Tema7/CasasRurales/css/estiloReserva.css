@@ -5,7 +5,7 @@
   margin: 0;
 }
 
-a{
+footer a, nav a{
   text-decoration: none;
   width: 9em;
   margin: 0 auto;

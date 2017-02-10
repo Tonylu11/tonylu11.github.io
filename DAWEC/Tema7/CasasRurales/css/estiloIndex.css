@@ -32,6 +32,18 @@ button{
 	cursor: pointer;
 	*animation: botonAparece 3s;
 }
+
+noscript{
+	background-color: black;
+	color: white;
+	padding: 1em;
+	line-height: 3em;
+}
+noscript a{
+	text-decoration: none;
+	color: green;
+}
+
 #dialog-message{
 	display: none;
 }
