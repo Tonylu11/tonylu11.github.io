@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+*{
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  width: 9em;
+  margin: 0 auto;
+}
+
+article{
+  overflow: hidden;
+  vertical-align: top;
+  display: inline-flex;
+  flex-flow: column;
+  width: 35%;
+  box-shadow: 2px 2px 3px black;
+  margin: 1em;
+  max-width: 15em;
+  min-width: 15em;
+  border: 1px solid #6B8E23;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+article header{
+  background-color: #6B8E23;
+}
+aside{
+  position : absolute;
+  right : 0;
+  width : 40%;
+  background-color: rgba(129,145,66,0.7);
+}
+aside label{
+    margin: 0.6em;
+}
+
+button{
+  font-family: 'Berkshire Swash', cursive;
+	background-color: white;
+	color: #819142;
+	border-radius: 0.3rem;
+	cursor: pointer;
+  padding: 0.5em 0.8em;
+  margin: 1em auto;
+}
+
+body{
+  text-align: center;
+  background:url("../img/negro.png"), url("../img/casamovil.jpg")  no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer{
+  font-family: 'Berkshire Swash', cursive;
+  font-size:0.75em;
+  background-color: #6B8E23;
+  padding: 0.5em 0;
+  line-height: 1.3em;
+
+}
+
+footer img{
+  margin-top: 0.3em;
+  width: 10%;
+}
+
+h1{
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 3em;
+  color: #6B8E23;
+  text-shadow: 2px 2px 4px black;
+}
+
+h2{
+  font-family: 'Berkshire Swash', cursive;
+  margin-top: 0;
+  padding: 0.5em;
+}
+
+header,nav,article header{
+  text-align: center;
+}
+
+article img{
+  height: 10rem;
+}
+
+nav li{
+  padding: 0.9em;
+  transition: 1s all;
+}
+
+nav li:hover{
+  background-color: #808000;
+  color: black;
+}
+
+main{
+  margin: 1em;
+}
+
+nav{
+  font-family: 'Berkshire Swash', cursive;
+  background-color: rgba(129,145,66,0.7);
+}
+
+p{
+  margin-top: 1em; 
+  font-weight: bold;
+}
+
+nav ul, aside ul{
+  list-style: none;
+  padding: 0;
+}
+
+#principal{
+  display:  flex;
+}
+#botonFiltro{
+  background-color: rgba(129,145,66,0.7);
+  float :right;
+  z-index: 0;
+}
+#botonFiltro input {
+  background-color: transparent;
+  border: 0;
+}
+aside{
+  display: none; 
+}
+aside li{
+  display: block;
+  margin: 0.9em;
+}
+
+@media screen and (min-width:480px){
+  body{
+		background: url("../img/negro.png"), url("../img/fondoIndex3.jpg") no-repeat fixed;
+		background-size: cover;
+		padding: 0;
+	}
+	h1{
+		font-size: 300%;
+	}
+	button{
+		font-size: 160%;
+	}
+  li{
+    display: inline-block;
+  }
+  aside{
+    display: inline-block;
+    flex-flow: column;
+    max-width: 30%;
+    position: relative;
+  }
+  #botonFiltro{
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px){
+  body{
+		padding: 0;
+    background-position-x: 0;
+	}
+
+  footer{
+    font-size: 1em;
+  }
+  
+  footer img{
+    width: 4%;
+  }
+  
+  h1{
+    font-size: 4em;
+  }
+  aside li{
+    line-height: 3.1em;
+  }
+}
+
+@media screen and (min-width:1000px){
+  aside{
+    width: 25%;
+  }
+}
+@media screen and (min-width:1500px){
+  aside{
+    width: 20%;
+  }
+}

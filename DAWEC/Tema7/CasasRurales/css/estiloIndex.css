@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+*{
+  font-family: 'Berkshire Swash', cursive;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	font-size: 16px;
+  background: url("../img/fondoIndex3.jpg") no-repeat fixed;
+  background-size: 54rem;
+	text-align: center;
+	padding-top: 45%;
+	padding-bottom: 50%;
+}
+
+main{
+	font-size: 1.3rem;
+	color: white;
+	text-shadow: 2px 2px 4px black;
+}
+
+button{
+	font-family: 'Berkshire Swash', cursive;
+	background-color: white;
+	color: #819142;
+	padding: 0.6rem;
+	border: 0;
+	border-radius: 0.3rem;
+	cursor: pointer;
+	*animation: botonAparece 3s;
+}
+#dialog-message{
+	display: none;
+}
+@keyframes botonAparece {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@media screen and (min-width:360px){
+	body{
+		background-size: cover;
+	}
+}
+
+@media screen and (min-width:480px){
+	body{
+		background-size: cover;
+		padding: 0;
+	}
+	main{
+		padding: 12%;
+	}
+	h1{
+		font-size: 300%;
+	}
+	button{
+		font-size: 160%;
+	}
+}
+
+

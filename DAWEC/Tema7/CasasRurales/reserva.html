@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>Antonio Luque Bravo</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			  rel="stylesheet">
+		<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/estiloReserva.css">
+		<script src="js/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		<script src="js/jQuery-Form-Validator-master/form-validator/jquery.form-validator.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/js-cookie-master/src/js.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/formularioReserva.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body>
+		<header>
+			<h1>Casas Rurales</h1>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="hoteles.html">Inicio</a></li><li><a href="#">Reserva</a></li><li><a href="documentacion.html">Documentación</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div id="descripcion">
+				<header>Casa 1</header>
+				<img class="fotocasa" src="img/casa1-1.jpg">
+				<img class="fotocasa" src="img/casa2-2.jpg">
+				<img class="fotocasa" src="img/casa3-3.jpg">
+				<img class="fotocasa" src="img/casa4-4.jpg">
+				<div id="textoDescripcion">
+					<label>
+						<p class="destacado">Habitaciones: 8</p>
+						<p>
+						<h3>Descripción</h3>
+						La casa cuenta con:
+						<ul>
+						 	<li>Amplio salón comedor con chimenea de leña</li>
+						 	<li>Un cómodo sofá, para relajarse después de las excursiones</li>
+						 	<li>Dos espléndidas mesas para reuniones o comidas de 8-10 comensales</li>
+						 </ul>La cocina, de estilo rústico, está completamente equipada y comunica con una segunda cocina exterior, ideal para cocinar al aire libre. Las habitaciones son muy acogedoras y cálidas, ideales para el descanso. El porche, anexo al salón, está acondicionado para disfrutar de una agradable tertulia o de una tarde de lectura en contacto con la naturaleza.</p>
+						<p class="destacado">Precio: 103€ por noche</p>
+					</label>
+				</div>
+			</div>
+			<div id="servicios">
+				<header>Servicios incluidos</header>
+					<p>
+						<i class="material-icons">wifi</i> <label>Wi-Fi</label>
+					</p>
+
+					<p>
+						<i class="material-icons">pool</i> <label>Piscina</label>
+					</p>
+					<p>
+						<i class="material-icons">pets</i> <label>Mascotas permitidas</label>
+					</p>
+
+				</div>
+			</div>
+			<div id="localizacion">
+				<header>Localización</header>
+				<p>
+					<iframe src="https://www.google.com/maps/d/embed?mid=1G9R_uKSyIHfYYM0NSE_ns9zmPvM"></iframe>
+				</p>
+			</div>
+			</div>
+
+			<form action="#" method="post" id="formReserva">
+				<header>
+					<p>Datos de Reserva</p>
+				</header>
+				<p>
+					<label>Nombre:</label>
+					<input type="text" required id="nombre" data-validation="custom" data-validation-regexp="^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{3,}"  data-validation-error-msg="El nombre tiene que cumplir el formato." placeholder="ej: Antonio" title="Primera letra mayúscula y un mínimo de 3 letras para el nombre"/>
+				</p>
+				<p>
+					<label>Apellidos:</label>
+					<input type="text" required placeholder="ej: Luque Bravo" id="apellidos"
+						   data-validation="custom" data-validation-error-msg="Los apellidos tienen que cumplir con el formato"
+						   data-validation-regexp="^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{2,}(\s(de|del)?\s?[A-ZÁÉÍÓÚÑ][a-záéíóúñ]{2,})+$"
+						   title="Primera letra mayuscula y un mínimo de 3 letras para cada apellido, admite apellidos compuestos (de/del)." />
+				</p>
+				<p>
+					<label>Correo:</label>
+					<input type="text" required
+						   placeholder="hola@gmail.com"
+						   data-validation="email"
+						   data-validation-error-msg="El email debe de ser válido" id="correo"/>
+				</p>
+				<p>
+					<label>Teléfono:</label>
+					<input type="tel" required placeholder="678549654" data-validation="custom" data-validation-error-msg="El teléfono debe contener 9 dígitos" data-validation-regexp="^[\d]{9}" id="telefono"/>
+				</p>
+				<p>
+					<label>Fecha entrada:</label>
+					<input id="fentrada" type="text" class="datepicker" required>
+				</p>
+				<p>
+					<label>Fecha salida:</label>
+					<input id="fsalida" type="text" class="datepicker" required>
+				</p>
+				<p>
+					<label>NºPersonas:</label>
+					<input id="npersonas" type="number" required placeholder="2" data-validation="number" data-validation-error-msg="Debe de ser un dígito" name="numeropersonas"/>
+				</p>
+				<p>
+				<input type="checkbox" id="condiciones" data-validation="required" data-validation-error-msg="Tienes que aceptar las condiciones">
+				<label>Acepto las condiciones</label>
+				</p>
+				<p>
+					<input type="submit" value="Reservar" id="nuevareserva">
+				</p>
+			</form>
+		</main>
+		<footer>
+			<h3>Practica Hoteles Rurales Realizado por Antonio Luque Bravo</h3>
+			<a href="https://github.com/Tonylu11"><img src="img/github.svg" alt="Icono de GitHub"/></a>
+		</footer>
+	</body>
+</html>

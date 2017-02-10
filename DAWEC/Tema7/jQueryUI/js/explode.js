@@ -1,8 +1,5 @@
 $(document).ready(function () {
-    $(".explode").on('click', function () {
-        $(this).toggle("explode");
+    $(this).on('click', function () {
+        $(".explode").toggle("explode",{pieces:64});
     });
-    $("body").on('click', function () {
-        $(".explode").show();
-    })
 });

@@ -10,7 +10,7 @@ $(function(){
   			return false;
 
   		return letras[dni[0]%23] === dni[1].toUpperCase();
-  		    			
+
   	},
   	errorMessage : 'Formato Inválido.',
   	errorMessageKey: 'FormatoInvalido'
