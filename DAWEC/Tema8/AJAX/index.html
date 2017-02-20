@@ -1,0 +1,57 @@
+<html>
+  <head>
+		<title>Antonio Luque Bravo</title>
+		<script type="text/javascript" src="js/codigo.js"></script>
+		<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	<body>
+		<form action="#">
+		URL: <input type="text" id="url" size="100" />
+		<input type="button" id="enviar" value="Mostrar" />
+		</form>
+
+		<h2>Contenidos del archivo:</h2><!-- Scroller -->
+		<textarea id="contenidoPagina" readonly></textarea>
+
+		<h2>Estados de la petición AJAX:</h2><!-- Petición AJAX ej: 4 - DONE -->
+		<div id="estadoAJAX"></div>
+
+		<h2>Respuesta del servidor (código y texto):</h2><!-- Respuesta servidor ej: 200 - OK -->
+		<div id="cabeceraHTTP"></div>
+		<hr>
+		<ul>
+			<li>Indica el significado de las constantes del objeto XMLHttpRequest:
+				<ol>
+					<li>UNSENT: El método open() no ha sido llamado aún, código 0</li>
+					<li>OPENED: open() ha sido llamado, código 1</li>
+					<li>HEADERS_RECEIVED: se ha llamado al método send(), cabeceras y estado están disponibles, código 2</li>
+					<li>LOADING: Descargando la respuesta del servidor, código 3</li>
+					<li>DONE: La petición se ha completado, código 4</li>
+				</ol>
+			</li>
+			<li>Indica la forma de crear un objeto XMLHttpRequest hoy en día: La forma de crear un objeto es con let variable = new XMLHttpRequest();</li>
+			<li>Métodos manejadores de eventos. Indica su utilidad.
+				<ol>
+					<li>onreadystatechange: La funcion callback es llamada cuando el atributo readyState cambia.
+				</ol>
+			</li>
+			<li>Respuestas del servidor (aparte de 200)
+				<ol>
+					<li>200: OK, cuando todo esta correcto.</li>
+					<li>403: Forbidden, cuando no hay permisos para acceder a ese recurso.</li>
+					<li>404: Page not found, cuando el recurso al que intentamos acceder no existe.</li>
+				</ol>
+			</li>
+			<li>Indica las distintas respuestas del servidor.
+				<ol>
+					<li>1xx: Respuestas informativas</li>
+					<li>2xx: Peticiones correctas</li>
+					<li>3xx: Redirecciones</li>
+					<li>4xx: Errores del cliente</li>
+					<li>5xx: Errores de servidor</li>
+				</ol>
+			</li>
+		</ul>
+		<h3><a href="https://krenzz.000webhostapp.com/AJAX/index.html">Ver Online</a></h3>
+	</body>
+</html>

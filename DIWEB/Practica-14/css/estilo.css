@@ -1,30 +1,35 @@
 *{
+	font-family: "PatuaOne";
 	margin: 0;
 	padding: 0;
 }
+
 body{
 	display: flex;
 	flex-direction: column;
-	background-color: #FFFFFA;
+	background-color: #FFFFFF;
 	width: 100%;
+	*overflow-y: hidden;
 }
 
 header{
 	width: 100%;
 	text-align: center;
 }
+
 nav {
 	position: fixed;
-		width:100%;
-		height:100%;
-		margin:0;
-	 display: none;
-	 background-color: rgba(20,20,20,0.8); 
+	width:100%;
+	margin:0;
+	display: none;
+	background-color: rgba(20,20,20,0.89);	
 }
+
 nav ul{
 	overflow: hidden;
 	list-style: none;
 }
+
 nav ul li {
 		display:block;
 	text-align: center;
@@ -36,22 +41,262 @@ nav ul li a{
 	color:#fff;
 	text-decoration:none;
 }
+
 #barraMenu{
 	position:fixed;
-	background-color:transparent;
 	left:0;
 	top:0;
-	height:30px;
-	width:30px;
 	padding:20px 20px;
 	z-index:1;
 	cursor:pointer;
+
 }
+#barraMenu a{
+		color: #b3b3b3;
+}
+
 #home{
+	font-size: 1.2em;
+	color: white;
 	display: flex;
 	flex-flow: column;
 	flex: 1;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid black;
+	  background-size: cover;
+	background-image: url("../img/fondoHome.jpg");
+	background-attachment: fixed;
 }
+#home i{
+		align-items: end;
+}
+
+#home i{
+	color:#b3b3b3;
+}
+
+#practicas{
+	background-color: #e6e6e6;
+	display: flex;
+	flex-flow: column;
+}
+#practicas>article:nth-child(even){
+	display: flex;
+	flex: 1;
+	align-items: center;
+	flex-direction: row;
+}
+#practicas>article:nth-child(odd){
+	display: flex;
+	flex: 1;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+#practicas img{
+	border-radius: 10px;
+}
+
+#conocimientos{
+	display: flex;
+	flex-flow: column;
+	background-color: rgba(0,0,0,1);
+	background-image: url("../img/negro.png") , url("../img/fondoConocimientos.jpg");
+	background-size: cover;
+	background-attachment: fixed ,fixed;
+	background-position: center;
+	color: white;
+	letter-spacing: 0.02em;
+}
+article{
+	display: flex;
+	flex: 3;
+	flex-flow: column;
+	padding: 1em;
+	justify-content: flex-end;
+}
+#practicas>article>header{
+	flex: 2;
+}
+#desarrollo{
+	padding-bottom: 0;
+	padding-top: 0.2em;
+}
+#otros>header{
+	padding-top: 0.4em;
+}
+
+#desarrollo> .contenedor{
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	flex: 1;
+}
+
+#otros> .contenedor{
+	display: flex;
+	flex-flow: column;
+	justify-content: top;
+	flex: 1;
+}
+
+.contenedor div>div{
+	border-radius: 10px;
+	height: 20px;
+	background-color: #24547A;
+}
+.contenedor span{
+	margin-bottom: 0.2em;
+}
+
+#js{
+	width: 73%;
+}
+#php{
+	width: 55%;
+}
+#css3,#apache{
+	width: 60%;
+}
+#html5{
+	width: 70%;
+}
+#java{
+	width: 66%;
+}
+#linux{
+	width: 66%;
+}
+#android{
+	width: 56%;
+}
+#sobremi{
+	background-color: #e6e6e6;
+	display: flex;
+	flex-flow: column;
+}
+#sobremifotoytexto{
+	display: flex;
+	flex: 1;
+	flex-flow: column;
+	align-items: center;
+}
+#sobremifotoytexto>img{
+	flex: 1;
+	margin: 1em 0 0.5em 0;
+	width:8rem;
+	border-radius: 10px;
+}
+#sobremifotoytexto>p{
+	flex: 1;
+	font-size: 0.9em;
+	margin: 0 1em;
+	padding: 0.3em;
+	text-align: justify;
+}
+#rrss{
+	flex: 1;
+}
+#rrss i{
+	margin: 0.1em;
+	color: black;
+}
+
+article>img{
+	flex: 2;
+	overflow: hidden;
+	height: 100%;
+}
+
+body>main>a{
+	position: fixed;
+	bottom:0;
+	right: 0;
+	text-align: right;
+	margin: 1.1em;
+	font-size: 1.3em;
+	color:#b3b3b3;
+}
+
+@font-face
+{
+  font-family: "PatuaOne";
+  src: url('fonts/PatuaOne.ttf');
+}
+
+@media screen and (min-height:640px){
+	#desarrollo{
+		display: flex;
+		flex: 5;
+		flex-flow: column;
+	}
+	#otros{
+		display: flex;
+		flex: 3;
+		flex-flow: column;
+		
+	}
+	#desarrollo>div>.tecnologia{
+		display: flex;
+		flex: 1;
+		flex-flow: row;
+		align-items: center;
+		justify-content: left;
+	}
+	#otros>div>.tecnologia{
+		display: flex;
+		flex: 1;
+		flex-flow: co;
+		align-items: center;
+		justify-content:left;
+	}
+	
+	#desarrollo>div>.tecnologia>span{
+		width: 17%;
+	}
+	#otros .tecnologia span{
+		width: 25%;
+	}
+  #desarrollo>.contenedor div>div, #otros>.contenedor div>div{
+	  height: 25px;
+  }
+	#sobremifotoytexto>p{
+		flex: 2;
+	  font-size: 1.1em;
+  }
+}
+@media screen and (min-height:1024px) and (min-width: 768px){
+	#practicas{
+		font-size: 1.5em;
+	}
+	#conocimientos{
+		font-size: 1.5em;
+	}
+	#otros .tecnologia span{
+		width: 17%;
+	}
+	#desarrollo>.contenedor div>div, #otros>.contenedor div>div{
+	  height: 50px;
+  }
+	#sobremifotoytexto>img{
+		width: 25%;
+		margin-top: 5em;
+  }
+	#sobremifotoytexto>p{
+		line-height: 1.5em;
+	  font-size: 1.3em;
+		margin: 1em 3em;
+  }
+	#sobremifotoytexto>#rrss{
+		flex: 2;
+	  font-size: 2em;
+  }
+}
+
+
+
+
+
+
+
+
+

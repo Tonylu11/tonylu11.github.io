@@ -1,0 +1,56 @@
+<html>
+  <head>
+		<title>Antonio Luque Bravo</title>
+		<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="js/codigo.js"></script>
+		<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	<body>
+		<form action="#">
+		URL: <input type="text" id="url" size="100" />
+		<input type="button" id="enviar" value="Mostrar" />
+		</form>
+
+		<h2>Contenidos del archivo:</h2><!-- Scroller -->
+		<textarea id="contenidoPagina" readonly></textarea>
+
+		<h2>Estados de la petición AJAX:</h2><!-- Petición AJAX ej: 4 - DONE -->
+		<div id="estadoAJAX"></div>
+
+		<h2>Respuesta del servidor (código y texto):</h2><!-- Respuesta servidor ej: 200 - OK -->
+		<div id="cabeceraHTTP"></div>
+		<h2>Preguntas teóricas de AJAX con jQuery:</h2>
+				<ul>
+			<li><strong>El método ajaxSetup() establece los valores por defecto en las peticiones Ajax. Indica por qué su uso no está recomendado:</strong> Porque su modificación de opciones es global, es decir, afecta a todas las invocaciones de AJAX.
+			</li>
+			<li><strong>Indica los 6 manejadores de eventos globales de AJAX.</strong>
+				<ol>
+					<li>ajaxComplete()</li>
+					<li>ajaxError()</li>
+					<li>ajaxSend()</li>
+					<li>ajaxStart()</li>
+					<li>ajaxStop()</li>
+					<li>ajaxSuccess()</li>
+				</ol>
+			</li>
+			<li><strong>Indica al objeto al que han de estar asociados los métodos anteriores: </strong>Tiene que estar asociados a un objeto jQuery del document</li>
+			<li><strong>Los métodos AJAX abreviados son 6. Indica cuáles son y utilidad de cada uno.</strong>
+				<ol>
+					<li>get(): Carga los datos del servidor usando HTTP con petición GET.</li>
+					<li>getJSON(): Carga los datos en un JSON del servidor usando HTTP con petición GET</li>
+					<li>getScript(): Carga un archivo JavaScript del servidor usando HTTP con petición GET y a continuación lo ejecuta.</li>
+					<li>post(): Carga datos del servidor usando HTTP con petición POST. </li>
+					<li>load(): Carga datos del servidor y devuelve el HTML introducido al elemento asignado.</li>
+				</ol>
+			</li>
+			<li><strong>En jQuery, indica la diferencia entre .ajaxSucess() y .ajaxComplete()</strong>
+				<ol>
+					<li>ajaxSuccess(): Solo se llama cuando el servidor responde con un código 200 (“OK”), es decir cuando todo esta bien.</li>
+					<li>ajaxComplete(): Siempre es llamado, sin importar si la petición Ajax ha finalizado con éxito o no.</li>
+				</ol>
+			</li>
+		</ul>
+
+		<h3><a href="https://krenzz.000webhostapp.com/AJAXjQuery/index.html">Ver Online</a></h3>
+	</body>
+</html>

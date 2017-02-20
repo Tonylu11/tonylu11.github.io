@@ -12,23 +12,23 @@
 	</head>
 	<body>
 		<div id="barraMenu">
-			<a href="#" id="activarMenu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+			<a class="enlacesInternos" href="#" id="activarMenu"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
 		</div>
 		<nav>
 			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#practicas">Prácticas</a></li>
-				<li><a href="#conocimientos">Conocimientos</a></li>
-				<li><a href="#sobremi">Sobre mí</a></li>
+				<li><a class="enlacesInternos" href="#home">Home</a></li>
+				<li><a class="enlacesInternos" href="#practicas">Prácticas</a></li>
+				<li><a class="enlacesInternos" href="#conocimientos">Conocimientos</a></li>
+				<li><a class="enlacesInternos" href="#sobremi">Sobre mí</a></li>
 			</ul>
 	    </nav>
 		<main>
 			<section id="home">
 				<header><h1>Antonio Luque Bravo</h1></header>
-				<a href="#practicas"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+				<a class="enlacesInternos" href="#practicas"><i class="fa fa-arrow-down fa-2x" aria-hidden="true"></i></a>
 			</section>
 			<section id="practicas">
-				<header><h2>Prácticas</h2></header>
+					<header><h2>Prácticas</h2></header>
 				<article id="practica1">
 					<header>Casas rurales</header>
 					<img src="img/casasrurales.jpg" alt="Casas rurales">
@@ -45,16 +45,41 @@
 					<header>jQuery UI</header>
 					<img src="img/jqueryui.jpg" alt="jQuery UI">
 				</article>
-				<a href="#home"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 			</section>
 			<section id="conocimientos">
 				<header><h2>Conocimientos</h2></header>
-				<a href="#home"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+				<article id="desarrollo">
+					<header><h3>Desarrollo</h3></header>
+					<div class="contenedor">
+						<div class="tecnologia"><span>JS</span><div id="js"></div></div>
+						<div class="tecnologia"><span>PHP</span><div id="php"></div></div>
+						<div class="tecnologia"><span>CSS3</span><div id="css3"></div></div>
+						<div class="tecnologia"><span>HTML5</span><div id="html5"></div></div>
+						<div class="tecnologia"><span>JAVA</span><div id="java"></div></div>
+					</div>
+				</article>
+				<article id="otros">
+					<header><h3>Otros</h3></header>
+					<div class="contenedor">
+						<div class="tecnologia"><span>LINUX</span><div id="linux"></div></div>
+						<div class="tecnologia"><span>APACHE</span><div id="apache"></div></div>
+						<div class="tecnologia"><span>ANDROID</span><div id="android"></div></div>
+					</div>
+				</article>
 			</section>
 			<section id="sobremi">
 				<header><h2>Sobre mí</h2></header>
-				<a href="#home"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+				<div id="sobremifotoytexto">
+					<img src="img/yo.jpg" alt="Yo">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat,  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+					<div id="rrss">
+						<a href="https://twitter.com/ALBravo96"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a><!--
+						--><a href="https://www.linkedin.com/in/anluquebravo/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a><!--
+						--><a href="https://github.com/Tonylu11"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+					</div>
+				</div>
 			</section>
+			<a class="enlacesInternos" href="#home"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
 		</main>
 	</body>
 </html>
