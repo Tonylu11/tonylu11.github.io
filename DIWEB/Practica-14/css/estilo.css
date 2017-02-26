@@ -235,7 +235,7 @@ body>main>a{
   src: url('fonts/PatuaOne.ttf');
 }
 
-@media screen and (min-height:640px){
+@media screen and (min-width:640px){
 	#desarrollo{
 		display: flex;
 		flex: 5;
