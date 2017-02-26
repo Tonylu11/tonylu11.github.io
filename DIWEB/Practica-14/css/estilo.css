@@ -13,7 +13,7 @@ body{
 }
 
 header{
-	width: 100%;
+	/*! width: 100%; */
 	text-align: center;
 }
 
@@ -52,7 +52,7 @@ nav ul li a{
 
 }
 #barraMenu a{
-		color: #b3b3b3;
+	color: #b3b3b3;
 }
 
 #home{
@@ -63,8 +63,8 @@ nav ul li a{
 	flex: 1;
 	align-items: center;
 	justify-content: center;
-	  background-size: cover;
-	background-image: url("../img/homebg.jpg");
+	background-size: cover;
+	background-image: url("../img/negro.png") ,url("../img/fondohome.jpg");
 	background-attachment: fixed;
 }
 #home i{
@@ -74,26 +74,34 @@ nav ul li a{
 #home i{
 	color:#b3b3b3;
 }
-
 #practicas{
-	background-color: #e6e6e6;
+	color: white;
+	background-image: url("../img/negro.png") ,url("../img/fondopracticas.gif");
+	background-size: space;
+	background-attachment: fixed;
+}
+#divPracticas{
 	display: flex;
 	flex-flow: column;
+	height: 95%;
 }
-#practicas>article:nth-child(even){
+#divPracticas>article:nth-child(odd){
 	display: flex;
 	flex: 1;
 	align-items: center;
 	flex-direction: row;
 }
-#practicas>article:nth-child(odd){
+#divPracticas>article:nth-child(even){
 	display: flex;
 	flex: 1;
 	align-items: center;
 	flex-direction: row-reverse;
 }
-#practicas img{
+#divPracticas img{
+	overflow: hidden;
 	border-radius: 10px;
+	width: 50%;
+	height: 100%;
 }
 
 #conocimientos{
@@ -112,9 +120,9 @@ article{
 	flex: 3;
 	flex-flow: column;
 	padding: 1em;
-	justify-content: flex-end;
+	justify-content:flex-end;
 }
-#practicas>article>header{
+#divPracticas>article>header{
 	flex: 2;
 }
 #desarrollo{
@@ -170,7 +178,10 @@ article{
 	width: 56%;
 }
 #sobremi{
-	background-color: #e6e6e6;
+	color: white;
+	background-image:url("../img/fondosobremi.jpg");
+	background-attachment: fixed;
+	background-size: cover;
 	display: flex;
 	flex-flow: column;
 }
@@ -188,17 +199,18 @@ article{
 }
 #sobremifotoytexto>p{
 	flex: 1;
-	font-size: 0.9em;
+	font-size: 0.75em;
 	margin: 0 1em;
 	padding: 0.3em;
 	text-align: justify;
 }
 #rrss{
+	text-align: center;
 	flex: 1;
 }
 #rrss i{
 	margin: 0.1em;
-	color: black;
+	color: white;
 }
 
 article>img{
@@ -245,7 +257,6 @@ body>main>a{
 	#otros>div>.tecnologia{
 		display: flex;
 		flex: 1;
-		flex-flow: co;
 		align-items: center;
 		justify-content:left;
 	}
@@ -265,7 +276,7 @@ body>main>a{
   }
 }
 @media screen and (min-height:1024px) and (min-width: 768px){
-	#practicas{
+	#divPracticas>article>header{
 		font-size: 1.5em;
 	}
 	#conocimientos{
@@ -291,12 +302,63 @@ body>main>a{
 	  font-size: 2em;
   }
 }
+@media screen and (min-width: 1100px){
+	
+	#divPracticas>article:nth-child(even){
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	#divPracticas header{
+		font-size: 1.7em;
+	}
+	#divPracticas>article:nth-child(even) header{
+		display: flex;
+		align-items: center;
+	}
+  #divPracticas>article:nth-child(odd){
+		align-items: center;
+		flex-direction: column;
+  }
+	#divPracticas>article:nth-child(odd) header{
+		display: flex;
+		align-items: center;
+	}
+	#divPracticas{
+		flex-flow: row;
+	}
+	#divPracticas img{
+		overflow: hidden;
+		border-radius: 10px;
+		width:100%;
+		height: 100%;
+	}
 
+	#otros .tecnologia span{
+		width: 17%;
+	}
+	#desarrollo>.contenedor div>div, #otros>.contenedor div>div{
+		height: 35px;
+  }
 
-
-
-
-
-
-
-
+	#sobremifotoytexto{
+		display: flex;
+		flex: 5;
+		flex-flow: row;
+		align-items: center;
+	}
+	#sobremifotoytexto>img{
+		flex: 1;
+		margin: 2em 4em;
+		border-radius: 10px;
+	}
+	#sobremifotoytexto>p{
+		flex: 3;
+		font-size: 1.3em;
+		padding: 3em;
+		text-align: justify;
+	}
+	#rrss{
+		text-align: center;
+		flex: 1;
+	}
+}

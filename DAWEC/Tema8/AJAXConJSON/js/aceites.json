@@ -1,0 +1,15 @@
+{
+    "aceites": [{
+        "tipo": "Aceite de Oliva Virgen Extra",
+        "descripcion": "Este tipo de aceite es de máxima calidad, se obtiene directamente de aceitunas en buen estado únicamente por procedimientos mecánicos, con un sabor y olor intachables y libre de defectos, no pudiendo sobrepasar su grado de acidez los 0,8°, expresado en porcentaje de ácido oleico libre26 . La mediana de defectos ha de ser igual a 0 y la mediana de frutado mayor de 0."
+    }, {
+        "tipo": "Aceite de Oliva Virgen",
+        "descripcion": "Este aceite sigue los mismos parámetros de calidad que el aceite de oliva extra, en cuanto a los métodos de obtención. La diferencia es que no puede superar los 2° de acidez. La mediana de defectos tiene que ser inferior a 3,5 y la mediana de frutado mayor de 0. En otras palabras, los defectos deben ser prácticamente imperceptibles para el consumidor."
+    }, {
+        "tipo": "Aceite de Oliva",
+        "descripcion": "Es una mezcla de aceite de oliva refinado, que es el obtenido a partir del refinado de los aceites defectuosos, que no han alcanzado los parámetros de calidad anteriormente citados y de aceite de oliva virgen o virgen extra. Como observaremos, ha perdido la palabra 'virgen'. Ello es debido a que en el proceso de elaboración del aceite refinado se utilizan otros procesos químicos o térmicos de limpieza de aromas, sabores y colores. El grado de acidez de este aceite de oliva no puede ser superior al 1°."
+    },{
+        "tipo": "Aceite de Orujo de Oliva",
+        "descripcion": "Este tipo de aceite es el resultado de la mezcla de aceite de orujo de oliva refinado, procedente del refinado de aceite de orujo de oliva crudo que es el que se obtiene, por medios físicos o químicos, de los orujos resultantes de la molturación de la aceituna, y de aceite de oliva virgen o virgen extra. La graduación final obtenida, en ácido oleico, no será superior a 1°."
+    }]
+}

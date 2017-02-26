@@ -1,0 +1,11 @@
+{
+	"jamones": [{
+        "etiqueta": "Negro"
+    }, {
+        "etiqueta": "Rojo"
+    }, {
+        "etiqueta": "Verde"
+    },{
+        "etiqueta": "Blanco"
+    }]
+}

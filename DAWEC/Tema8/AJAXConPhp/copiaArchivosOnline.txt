@@ -1,0 +1,2 @@
+AJAX con PHP en Javascript: https://krenzz.000webhostapp.com/AJAXConPhp/indexjs.html
+AJAX con PHP en jQuery: https://krenzz.000webhostapp.com/AJAXConPhp/indexjquery.html

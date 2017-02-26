@@ -1,0 +1,9 @@
+{
+	"vinos": [{
+        "tipo": "Rosados"
+    }, {
+        "tipo": "Tintos jóvenes"
+    }, {
+        "tipo": "Tintos de crianza"
+    }]
+}
